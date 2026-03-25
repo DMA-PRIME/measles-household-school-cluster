@@ -18,6 +18,20 @@ source(file.path(project_root, "household_utils.R"))
 source(file.path(project_root, "simulation_utils.R"))
 
 # ==============================================================================
+# Local helper: build a minimal network list from an adjacency matrix
+# ==============================================================================
+
+make_network_from_matrix <- function(adj_matrix) {
+  n <- nrow(adj_matrix)
+  g <- if (sum(adj_matrix) > 0) {
+    graph_from_adjacency_matrix(adj_matrix, mode = "undirected", weighted = TRUE, diag = FALSE)
+  } else {
+    make_empty_graph(n, directed = FALSE)
+  }
+  list(graph = g, adjacency = adj_matrix, n_schools = n, n_edges = ecount(g))
+}
+
+# ==============================================================================
 # Shared test fixtures
 # ==============================================================================
 
@@ -56,6 +70,12 @@ make_schools <- function(n = 3, size = 200, vax = 0.9) {
     vaccination_coverage = vax,
     stringsAsFactors    = FALSE
   )
+}
+
+make_3school_network <- function() {
+  make_network_from_matrix(matrix(c(0, 0.5, 0.3,
+                                    0.5, 0,   0.8,
+                                    0.3, 0.8, 0  ), nrow = 3))
 }
 
 # ==============================================================================
@@ -124,10 +144,7 @@ test_that("between_school_transmission: no change when no infectors present", {
     initialize_vaccination_school(p, 0.9)
   })
 
-  adj <- matrix(c(0, 0.5, 0.3,
-                  0.5, 0,  0.8,
-                  0.3, 0.8, 0), nrow = 3)
-  net <- generate_custom_network(adj)
+  net <- make_3school_network()
 
   result_pops <- between_school_transmission(pops, net, params)
   # States should be unchanged (no infectors)
@@ -144,7 +161,7 @@ test_that("between_school_transmission: returns list of populations", {
     initialize_vaccination_school(p, 0.9)
   })
   adj <- matrix(c(0, 0.8, 0.8, 0), nrow = 2)
-  net <- generate_custom_network(adj)
+  net <- make_network_from_matrix(adj)
 
   result_pops <- between_school_transmission(pops, net, params)
   expect_equal(length(result_pops), 2)
@@ -158,7 +175,7 @@ test_that("run_network_simulation: returns list with required fields", {
   set.seed(1)
   params <- make_sim_params()
   schools <- make_schools(3, size = 100)
-  net <- generate_random_network(3, p_edge = 0.5)
+  net <- make_3school_network()
 
   result <- run_network_simulation(
     schools = schools, network = net, params = params,
@@ -174,7 +191,7 @@ test_that("run_network_simulation: daily_counts has correct dimensions", {
   set.seed(1)
   params <- make_sim_params()
   schools <- make_schools(2, size = 80)
-  net <- generate_custom_network(matrix(c(0, 0.5, 0.5, 0), 2))
+  net <- make_network_from_matrix(matrix(c(0, 0.5, 0.5, 0), 2))
 
   result <- run_network_simulation(
     schools = schools, network = net, params = params,
@@ -189,7 +206,7 @@ test_that("run_network_simulation: seed school has at least one infected case", 
   set.seed(1)
   params <- make_sim_params()
   schools <- make_schools(2, size = 100, vax = 0.0)  # No vaccination
-  net <- generate_custom_network(matrix(c(0, 0, 0, 0), 2))
+  net <- make_network_from_matrix(matrix(c(0, 0, 0, 0), 2))
 
   result <- run_network_simulation(
     schools = schools, network = net, params = params,
@@ -206,7 +223,7 @@ test_that("run_network_simulation: isolated school 2 is not affected when no net
   params <- make_sim_params()
   schools <- make_schools(2, size = 100, vax = 0.0)
   # Zero adjacency = no between-school transmission
-  net <- generate_custom_network(matrix(c(0, 0, 0, 0), 2))
+  net <- make_network_from_matrix(matrix(c(0, 0, 0, 0), 2))
 
   result <- run_network_simulation(
     schools = schools, network = net, params = params,
@@ -221,7 +238,7 @@ test_that("run_network_simulation: higher vaccination reduces total cases", {
   params <- make_sim_params()
   schools_low_vax  <- make_schools(1, size = 300, vax = 0.0)
   schools_high_vax <- make_schools(1, size = 300, vax = 0.95)
-  net <- generate_custom_network(matrix(0, 1, 1))
+  net <- make_network_from_matrix(matrix(0, 1, 1))
 
   result_low  <- run_network_simulation(schools_low_vax,  net, params, 1, 1, 60, seed = 42)
   result_high <- run_network_simulation(schools_high_vax, net, params, 1, 1, 60, seed = 42)
@@ -238,7 +255,7 @@ test_that("run_network_simulation: higher vaccination reduces total cases", {
 test_that("run_multiple_network_simulations: returns results for all simulations", {
   params <- make_sim_params()
   schools <- make_schools(2, size = 80)
-  net <- generate_custom_network(matrix(c(0, 0.5, 0.5, 0), 2))
+  net <- make_network_from_matrix(matrix(c(0, 0.5, 0.5, 0), 2))
 
   results <- run_multiple_network_simulations(
     n_simulations = 3, schools = schools, network = net,
@@ -253,7 +270,7 @@ test_that("run_multiple_network_simulations: returns results for all simulations
 test_that("run_multiple_network_simulations: all_school_data has n_sims * n_schools rows", {
   params <- make_sim_params()
   schools <- make_schools(2, size = 80)
-  net <- generate_custom_network(matrix(c(0, 0.5, 0.5, 0), 2))
+  net <- make_network_from_matrix(matrix(c(0, 0.5, 0.5, 0), 2))
 
   results <- run_multiple_network_simulations(
     n_simulations = 4, schools = schools, network = net,
