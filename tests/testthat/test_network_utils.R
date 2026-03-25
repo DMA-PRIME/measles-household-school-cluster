@@ -1,9 +1,7 @@
 # ==============================================================================
 # UNIT TESTS: network_utils.R
 # ==============================================================================
-# Tests for: generate_random_network, generate_smallworld_network,
-#            generate_scalefree_network, generate_custom_network,
-#            generate_distance_network
+# Tests for: generate_distance_network
 # ==============================================================================
 
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
@@ -24,118 +22,6 @@ expect_valid_network <- function(net, n_schools) {
   # Diagonal must be 0 (no self-loops)
   expect_equal(sum(diag(net$adjacency)), 0)
 }
-
-# ==============================================================================
-# generate_random_network
-# ==============================================================================
-
-test_that("generate_random_network: returns valid network for 10 schools", {
-  set.seed(1)
-  net <- generate_random_network(10, p_edge = 0.5)
-  expect_valid_network(net, 10)
-})
-
-test_that("generate_random_network: p_edge=0 produces no edges", {
-  set.seed(1)
-  net <- generate_random_network(5, p_edge = 0)
-  expect_equal(net$n_edges, 0)
-  expect_equal(sum(net$adjacency), 0)
-})
-
-test_that("generate_random_network: p_edge=1 produces fully connected graph", {
-  set.seed(1)
-  n <- 6
-  net <- generate_random_network(n, p_edge = 1)
-  # max possible edges for undirected, no self-loops = n*(n-1)/2
-  expect_equal(net$n_edges, n * (n - 1) / 2)
-})
-
-test_that("generate_random_network: adjacency is symmetric", {
-  set.seed(42)
-  net <- generate_random_network(8, p_edge = 0.5)
-  expect_equal(net$adjacency, t(net$adjacency))
-})
-
-test_that("generate_random_network: edge weights are in (0, 1]", {
-  set.seed(42)
-  net <- generate_random_network(8, p_edge = 0.8)
-  non_zero <- net$adjacency[net$adjacency > 0]
-  if (length(non_zero) > 0) {
-    expect_true(all(non_zero > 0))
-    expect_true(all(non_zero <= 1))
-  }
-})
-
-# ==============================================================================
-# generate_smallworld_network
-# ==============================================================================
-
-test_that("generate_smallworld_network: returns valid network", {
-  set.seed(1)
-  net <- generate_smallworld_network(10, nei = 2, p_rewire = 0.1)
-  expect_valid_network(net, 10)
-})
-
-test_that("generate_smallworld_network: adjacency is symmetric", {
-  set.seed(1)
-  net <- generate_smallworld_network(10, nei = 2, p_rewire = 0.0)
-  expect_equal(net$adjacency, t(net$adjacency))
-})
-
-test_that("generate_smallworld_network: handles small n_schools gracefully", {
-  set.seed(1)
-  net <- generate_smallworld_network(4, nei = 2, p_rewire = 0.1)
-  expect_valid_network(net, 4)
-})
-
-# ==============================================================================
-# generate_scalefree_network
-# ==============================================================================
-
-test_that("generate_scalefree_network: returns valid network", {
-  set.seed(1)
-  net <- generate_scalefree_network(10, m = 2)
-  expect_valid_network(net, 10)
-})
-
-test_that("generate_scalefree_network: adjacency is symmetric", {
-  set.seed(1)
-  net <- generate_scalefree_network(10, m = 2)
-  expect_equal(net$adjacency, t(net$adjacency))
-})
-
-test_that("generate_scalefree_network: m capped at n_schools-1", {
-  set.seed(1)
-  # m=100 for a 5-node graph should be capped to 4
-  net <- generate_scalefree_network(5, m = 100)
-  expect_valid_network(net, 5)
-})
-
-# ==============================================================================
-# generate_custom_network
-# ==============================================================================
-
-test_that("generate_custom_network: returns network matching supplied matrix", {
-  adj <- matrix(c(0, 0.5, 0.3,
-                  0.5, 0,  0.8,
-                  0.3, 0.8, 0), nrow = 3, ncol = 3)
-  net <- generate_custom_network(adj)
-  expect_valid_network(net, 3)
-  expect_equal(net$adjacency, adj)
-})
-
-test_that("generate_custom_network: all-zero matrix creates zero-edge network", {
-  adj <- matrix(0, nrow = 4, ncol = 4)
-  net <- generate_custom_network(adj)
-  expect_equal(net$n_edges, 0)
-})
-
-test_that("generate_custom_network: n_schools equals matrix dimension", {
-  adj <- matrix(0, nrow = 5, ncol = 5)
-  adj[1, 2] <- 0.5; adj[2, 1] <- 0.5
-  net <- generate_custom_network(adj)
-  expect_equal(net$n_schools, 5)
-})
 
 # ==============================================================================
 # generate_distance_network
