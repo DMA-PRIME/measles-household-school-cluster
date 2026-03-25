@@ -35,7 +35,7 @@ make_mock_results <- function(n_sims = 5, n_schools = 3) {
       school_name         = paste0("School", 1:n_schools),
       school_size         = c(200, 300, 400),
       vaccination_coverage = c(0.90, 0.85, 0.95),
-      total_infected      = c(sample(0:20, 1), sample(0:15, 1), sample(0:10, 1)),
+      total_infected      = c(sample(0:15, 1), sample(0:20, 1), sample(0:10, 1)),
       attack_rate         = c(runif(1, 0, 0.1), runif(1, 0, 0.05), runif(1, 0, 0.03)),
       stringsAsFactors    = FALSE
     )
