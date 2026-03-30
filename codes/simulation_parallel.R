@@ -443,9 +443,14 @@ run_parallel_simulations <- function(n_simulations,
     # Method 2: Try here package
     if (is.null(load_all_path)) {
       tryCatch({
-        here_path <- here::here("load_all.R")
+        here_path <- here::here("codes", "load_all.R")
         if (file.exists(here_path)) {
           load_all_path <- normalizePath(here_path)
+        } else {
+          here_path <- here::here("load_all.R")
+          if (file.exists(here_path)) {
+            load_all_path <- normalizePath(here_path)
+          }
         }
       }, error = function(e) NULL)
     }
@@ -455,6 +460,7 @@ run_parallel_simulations <- function(n_simulations,
       possible_paths <- c(
         "load_all.R",
         file.path(getwd(), "load_all.R"),
+        file.path(getwd(), "codes", "load_all.R"),
         file.path(getwd(), "modular", "load_all.R"),
         file.path(dirname(getwd()), "load_all.R")
       )

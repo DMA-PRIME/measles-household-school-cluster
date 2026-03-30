@@ -8,7 +8,7 @@
 # ==============================================================================
 
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
-source(file.path(project_root, "analysis_utils.R"))
+source(file.path(project_root, "codes", "analysis_utils.R"))
 
 # ==============================================================================
 # Shared mock results builder

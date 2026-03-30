@@ -5,7 +5,7 @@
 # ==============================================================================
 
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
-source(file.path(project_root, "network_utils.R"))
+source(file.path(project_root, "codes", "network_utils.R"))
 
 # ==============================================================================
 # Shared helper: validate network structure

@@ -62,8 +62,15 @@ cat(sprintf("Task %d: Running %d mid-outbreak simulations on %d cores\n",
 # LOAD MODULES
 # ==============================================================================
 cat("Loading simulation modules...\n")
-source("load_all.R", local = globalenv())
-source("midoutbreak_utils.R", local = globalenv())
+# Determine the directory containing this script so that load_all.R and
+# midoutbreak_utils.R are found whether the script is invoked from the project
+# root (`Rscript codes/run_batch_midoutbreak.R`) or from within codes/.
+.batch_args <- commandArgs(trailingOnly = FALSE)
+.batch_file  <- sub("^--file=", "", grep("^--file=", .batch_args, value = TRUE))
+codes_dir    <- if (length(.batch_file) > 0) dirname(normalizePath(.batch_file)) else "."
+
+source(file.path(codes_dir, "load_all.R"), local = globalenv())
+source(file.path(codes_dir, "midoutbreak_utils.R"), local = globalenv())
 
 # ==============================================================================
 # LOAD DATA
