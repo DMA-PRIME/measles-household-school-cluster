@@ -21,9 +21,11 @@ library(ggplot2)
 load_all_candidates <- c(
   "load_all.R",                           # Current directory
   here::here("load_all.R"),               # Project root
+  here::here("codes", "load_all.R"),      # codes/ subdirectory (preferred)
   here::here("modular", "load_all.R"),    # modular subdirectory
   file.path(getwd(), "load_all.R"),       # Explicit current dir
-  file.path(dirname(getwd()), "load_all.R")  # Parent directory
+  file.path(getwd(), "codes", "load_all.R"),  # codes/ under cwd
+  file.path(dirname(getwd()), "load_all.R")   # Parent directory
 )
 
 load_all_path <- NULL

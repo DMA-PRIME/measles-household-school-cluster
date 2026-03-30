@@ -72,10 +72,18 @@ cat(paste0("  - ", .libPaths(), collapse = "
 cat("Loading simulation modules...
 ")
 
-if (!file.exists("load_all.R")) {
-  stop("ERROR: load_all.R not found in ", getwd())
+# Determine the directory containing this script so that load_all.R is found
+# whether the script is run as `Rscript codes/run_batch_clean.R` (from project
+# root) or as `Rscript run_batch_clean.R` (from within codes/).
+.batch_args <- commandArgs(trailingOnly = FALSE)
+.batch_file  <- sub("^--file=", "", grep("^--file=", .batch_args, value = TRUE))
+codes_dir    <- if (length(.batch_file) > 0) dirname(normalizePath(.batch_file)) else "."
+
+load_all_path <- file.path(codes_dir, "load_all.R")
+if (!file.exists(load_all_path)) {
+  stop("ERROR: load_all.R not found; searched ", load_all_path)
 }
-source("load_all.R", local = globalenv())
+source(load_all_path, local = globalenv())
 
 # ==============================================================================
 # LOAD DATA

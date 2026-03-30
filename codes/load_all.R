@@ -92,6 +92,8 @@ if (is.null(module_dir) && sys.nframe() > 0) {
 if (is.null(module_dir) || !file.exists(file.path(module_dir, "rcpp_transmission.R"))) {
   if (file.exists("rcpp_transmission.R")) {
     module_dir <- "."
+  } else if (file.exists("codes/rcpp_transmission.R")) {
+    module_dir <- "codes"
   } else if (file.exists("modular/rcpp_transmission.R")) {
     module_dir <- "modular"
   }

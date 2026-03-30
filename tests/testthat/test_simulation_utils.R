@@ -11,11 +11,11 @@
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
 
 # Source all dependencies in the correct order
-source(file.path(project_root, "rcpp_transmission.R"))
-source(file.path(project_root, "population_utils.R"))
-source(file.path(project_root, "network_utils.R"))
-source(file.path(project_root, "household_utils.R"))
-source(file.path(project_root, "simulation_utils.R"))
+source(file.path(project_root, "codes", "rcpp_transmission.R"))
+source(file.path(project_root, "codes", "population_utils.R"))
+source(file.path(project_root, "codes", "network_utils.R"))
+source(file.path(project_root, "codes", "household_utils.R"))
+source(file.path(project_root, "codes", "simulation_utils.R"))
 
 # ==============================================================================
 # Local helper: build a minimal network list from an adjacency matrix

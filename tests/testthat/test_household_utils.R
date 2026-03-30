@@ -5,7 +5,7 @@
 # ==============================================================================
 
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
-source(file.path(project_root, "household_utils.R"))
+source(file.path(project_root, "codes", "household_utils.R"))
 
 # ==============================================================================
 # haversine_distance

@@ -8,7 +8,7 @@
 
 # Source the module under test (R6 only; no Rcpp needed for these functions)
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
-source(file.path(project_root, "population_utils.R"))
+source(file.path(project_root, "codes", "population_utils.R"))
 
 # ==============================================================================
 # draw_erlang

@@ -9,7 +9,7 @@
 
 # Source the module under test
 project_root <- Sys.getenv("PROJECT_ROOT", unset = normalizePath("."))
-source(file.path(project_root, "grade_utils.R"))
+source(file.path(project_root, "codes", "grade_utils.R"))
 
 # ==============================================================================
 # parse_grade_token
