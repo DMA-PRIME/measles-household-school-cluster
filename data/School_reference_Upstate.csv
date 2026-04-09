@@ -1,0 +1,427 @@
+﻿OBJECTID,County,Type,School.Name,City
+1,Abbeville,Private,Lighthouse Christian School,Abbeville
+2,Abbeville,Private,Shiloh Christian School,Due West
+3,Abbeville,Public,John C. Calhoun Elementary,Calhoun Falls
+4,Abbeville,Public,Calhoun Falls Charter,calhoun falls
+5,Abbeville,Public,Diamond Hill Elementary,Abbeville
+6,Abbeville,Public,Westwood Elementary,Abbeville
+7,Abbeville,Public,Wright Middle,Abbeville
+8,Abbeville,Public,Long Cane Primary,Abbeville
+9,Abbeville,Public,Cherokee Trail Elementary,Donalds
+10,Abbeville,Public,Abbeville High,Abbeville
+11,Greenwood,Public,Merrywood Elementary,Greenwood
+12,Abbeville,Public,Dixie High,Due West
+13,Anderson,Private,West Anderson Christian Academy,Anderson
+14,Anderson,Private,Covenant Christian Academy - Anderson,Anderson
+15,Anderson,Private,Central Presbyterian Preschool,Anderson
+16,Anderson,Private,Montessori School of Anderson,Anderson
+17,Anderson,Public,Anderson Five Charter School,Anderson
+18,Anderson,Private,Anderson Christian School,Anderson
+19,Anderson,Private,Temple Christian Academy,Anderson
+20,Anderson,Private,St. Joseph Catholic School - Anderson,Anderson
+21,Anderson,Private,New Covenant School,Anderson
+22,Pickens,Public,Lakes and Bridges Charter School,Easley
+23,Anderson,Public,Wright Elementary,Belton
+24,Anderson,Public,Riverside Middle,Pendleton
+25,Anderson,Public,Townville Elementary,Townville
+26,Anderson,Private,Oakwood Christian School,Anderson
+27,Anderson,Public,West Pelzer Elementary,Pelzer
+28,Anderson,Public,Honea Path Middle,Honea Path
+29,Anderson,Public,Calhoun Academy of the Arts,Anderson
+30,Anderson,Public,South Carolina Preparatory Academy,Anderson
+31,Anderson,Public,Homeland Park Primary,Anderson
+32,Anderson,Public,Flat Rock Elementary,Anderson
+33,Anderson,Public,Marshall Primary,Belton
+34,Anderson,Public,New Prospect Elementary,Anderson
+35,Anderson,Public,La France Elementary,La France
+36,Anderson,Public,Varennes Elementary,Anderson
+37,Anderson,Public,Southwood Academy for the Arts,Anderson
+38,Anderson,Public,Iva Elementary,Iva
+39,Anderson,Public,Belton Elementary,Belton
+40,Anderson,Public,North Pointe Elementary,Anderson
+41,Anderson,Public,Mt. Lebanon Elementary,Pendleton
+42,Anderson,Public,Whitehall Elementary,Anderson
+43,Anderson,Public,Honea Path Elementary,Honea Path
+44,Anderson,Public,Belton Middle,Belton
+45,Anderson,Public,Nevitt Forest Elementary,Anderson
+46,Anderson,Public,Starr Elementary,Starr
+47,Anderson,Public,Hunt Meadows Elementary,Easley
+48,Anderson,Public,Centerville Elementary,Anderson
+49,Anderson,Public,Belton Preparatory Academy,Belton
+50,Anderson,Public,McLees Elementary,Anderson
+51,Anderson,Public,Cedar Grove Elementary,Williamston
+52,Greenville,Public,Greenville Technical Charter High School,Greenville
+53,Anderson,Public,Palmetto Elementary,Williamston
+54,Anderson,Public,Pendleton Elementary,Pendleton
+55,Anderson,Public,Concord Elementary,Anderson
+56,Anderson,Public,Starr-Iva Middle,Starr
+57,Anderson,Public,McCants Middle,Anderson
+58,Anderson,Public,Concrete Primary,Easley
+59,Anderson,Public,Glenview Middle,Anderson
+60,Anderson,Public,Wren Elementary,Piedmont
+61,Anderson,Public,Midway Elementary,Anderson
+62,Anderson,Public,Spearman Elementary,Piedmont
+63,Anderson,Public,Palmetto Middle,Williamston
+64,Anderson,Public,Crescent High,Iva
+65,Anderson,Public,Powdersville Elementary,Greenville
+66,Anderson,Public,Powdersville Middle,Greenville
+67,Anderson,Public,Wren Middle,Piedmont
+68,Anderson,Public,South Carolina Preparatory Leadership School,Anderson
+69,Anderson,Public,Pendleton High,Anderson
+70,Anderson,Public,Palmetto High,Williamston
+71,Anderson,Public,Belton Honea Path High,Honea Path
+72,Anderson,Public,Powdersville High,Greenville
+73,Anderson,Public,Robert Anderson Middle,Anderson
+74,Anderson,Public,Wren High,Piedmont
+75,Anderson,Public,Westside High,Anderson
+76,Anderson,Public,T. L. Hanna High,Anderson
+77,Cherokee,Public,Draytonville Elementary,Gaffney
+78,Cherokee,Public,Corinth Elementary,Gaffney
+79,Cherokee,Public,Blacksburg Primary,Blacksburg
+80,Cherokee,Public,Blacksburg Elementary,Blacksburg
+81,Cherokee,Public,Goucher Charter Academy,Gaffney
+82,Cherokee,Public,Northwest Elementary,Gaffney
+83,Cherokee,Public,John E. Ewing Middle,Gaffney
+84,Cherokee,Public,Luther Vaughan Elementary,Gaffney
+85,Cherokee,Public,Blacksburg Middle,Blacksburg
+86,Cherokee,Public,Limestone-Central Elementary,Gaffney
+87,Cherokee,Public,Grassy Pond Elementary,Gaffney
+88,Cherokee,Public,Blacksburg High,Blacksburg
+89,Cherokee,Public,B. D. Lee Elementary,Gaffney
+90,Cherokee,Public,Cherokee Charter School,gaffney
+91,Cherokee,Public,Gaffney Middle,Gaffney
+92,Cherokee,Public,Gaffney High,Gaffney
+93,Greenville,Private,Haynsworth School,Greenville
+94,Greenville,Private,White Oak Baptist Church Kindergarten,Greenville
+95,Greenville,Private,Edward Rd Baptist Church Kindergarten,Greenville
+96,Greenville,Private,John Knox Weekday Kindergarten,Greenville
+97,Greenville,Private,Westminster Weekday School,Greenville
+98,Greenville,Private,Furman University Child Development Center,Greenville
+99,Greenville,Private,First Baptist Day School,Greenville
+100,Greenville,Public,Aldersgate CDC,Greenville
+101,Greenville,Private,BEST Skills Academy,Greenville
+102,Greenville,Private,First Presbyterian Academy - Downtown Campus,Greenville
+103,Greenville,Private,Taylors First Baptist Church Kindergarten,Taylors
+104,Greenville,Private,Montessori School of Mauldin,Mauldin
+105,Greenville,Private,Conestee Baptist Day School,Conestee
+106,Greenville,Private,Abundant Life Christian School,Greenville
+107,Greenville,Public,Meyer Center for Special Children,Greenville
+108,Greenville,Private,Chandler School,Greenville
+109,Greenville,Private,Hidden Treasure Christian School,Taylors
+110,Greenville,Private,Upstate Montessori Academy,Greenville
+111,Greenville,Public,West Greenville School,Greenville
+112,Greenville,Private,St. Anthony of Padua School,Greenville
+113,Greenville,Private,Tabernacle Christian School,Greenville
+114,Greenville,Private,Hope Academy- Landrum Campus,Landrum
+115,Greenville,Private,Calvary Christian School - Greer,Greer
+116,Greenville,Private,Calvary's Kids Preschool,Greer
+117,Greenville,Public,Washington Center,Greenville
+118,Greenville,Public,Greer Preparatory Academy,Taylors
+119,Greenville,Private,Prince of Peace Catholic School,Taylors
+120,Greenville,Private,As-Sabeel Academy of Greenville,Greer
+121,Greenville,Private,Five Oaks Academy,Simpsonville
+122,Greenville,Private,Mauldin Christian Academy,Mauldin
+123,Greenville,Public,Reedy Laurel Elementary,greenville
+124,Greenville,Public,SC Governor's School for the Arts and Humanities,Greenville
+125,Greenville,Public,Tigerville Elementary,Taylors
+126,Greenville,Public,East Link Academy,Greenville
+127,Greenville,Public,East Link Academy,Greenville
+128,Greenville,Private,St. Mary's Catholic School,Greenville
+129,Greenville,Public,Westcliffe Elementary,Greenville
+130,Greenville,Private,Greenville Classical Academy,Greenville
+131,Greenville,Private,Our Lady of the Rosary School,Greenville
+132,Greenville,Public,LEAD Academy,Greenville
+133,Greenville,Private,Mitchell Rd Christian Academy,Greenville
+134,Greenville,Public,GREEN Upstate High School Greenville,Simpsonville
+135,Greenville,Public,Brook Glenn Elementary,Taylors
+136,Greenville,Public,Armstrong Elementary,Greenville
+137,Greenville,Public,Alexander Elementary,Greenville
+138,Greenville,Public,Langston Charter Middle,Greenville
+139,Greenville,Public,Berea Elementary,Greenville
+140,Greenville,Private,First Presbyterian Academy - Shannon Forest,Greenville
+141,Greenville,Public,Brashier Middle College Charter High,Simpsonville
+142,Greenville,Public,Hollis Academy,Greenville
+143,Greenville,Public,Heritage Elementary,Travelers Rest
+144,Greenville,Public,A.J. Whittenberg Elementary,Greenville
+145,Greenville,Public,Greer Middle College Charter High,Taylors
+146,Greenville,Public,Stone Academy,Greenville
+147,Greenville,Private,Hampton Park Christian School,Greenville
+148,Greenville,Public,Summit Drive Elementary,Greenville
+149,Greenville,Public,Sue Cleveland Elementary,Piedmont
+150,Greenville,Public,Mitchell Road Elementary,Greenville
+151,Greenville,Public,Paris Elementary,Taylors
+152,Greenville,Public,Thomas E. Kerns Elementary,Greenville
+153,Greenville,Public,Grove Elementary,Piedmont
+154,Greenville,Public,Monaview Elementary,Greenville
+155,Greenville,Public,Welcome Elementary,Greenville
+156,Greenville,Public,Augusta Circle Elementary,Greenville
+157,Greenville,Public,Cherrydale Elementary,Greenville
+158,Greenville,Private,St. Joseph's Catholic School - Greenville,Greenville
+159,Greenville,Public,Duncan Chapel Elementary,Greenville
+160,Greenville,Public,Crestview Elementary,Greer
+161,Greenville,Public,Gateway Elementary,Travelers Rest
+162,Greenville,Public,Sevier Middle,Greenville
+163,Greenville,Public,Tanglewood Middle,Greenville
+164,Greenville,Public,East North Street Academy,Greenville
+165,Greenville,Public,GREEN Charter School Simpsonville,Greenville
+166,Greenville,Public,Fork Shoals School,Pelzer
+167,Greenville,Public,Pelham Road Elementary,Greenville
+168,Greenville,Public,Greenville Middle Academy,Greenville
+169,Greenville,Public,Skyland Elementary,Greer
+170,Greenville,Public,Taylors Elementary,Taylors
+171,Greenville,Public,Northwest Middle,Travlers Rest
+172,Greenville,Public,Berea Middle,Greenville
+173,Greenville,Public,Ralph Chandler Middle,Simpsonville
+174,Greenville,Public,Sterling School,Greenville
+175,Greenville,Public,Simpsonville Elementary,Simpsonville
+176,Greenville,Public,Lake Forest Elementary,Greenville
+177,Greenville,Public,Mountain View Elementary,Taylors
+178,Greenville,Public,Lakeview Middle,Greenville
+179,Greenville,Public,Sara Collins Elementary,Greenville
+180,Greenville,Public,Brushy Creek Elementary,Taylors
+181,Greenville,Public,League Academy,Greenville
+182,Greenville,Public,Beck International Academy,Greenville
+183,Greenville,Public,Bryson Elementary,Simpsonville
+184,Greenville,Public,Northwood Middle,Taylors
+185,Greenville,Public,Buena Vista Elementary,Greer
+186,Greenville,Public,Greenbrier Elementary,Greenville
+187,Greenville,Public,Oakview Elementary,Simpsonville
+188,Greenville,Public,Chandler Creek Elementary,Greer
+189,Greenville,Public,Blythe Academy,Greenville
+190,Greenville,Public,Monarch Elementary,Simpsonville
+191,Greenville,Public,Dr. Phinnize J. Fisher Middle,Greenville
+192,Greenville,Public,Blue Ridge Middle,Greer
+193,Greenville,Public,Bethel Elementary,Simpsonville
+194,Greenville,Public,Bell's Crossing Elementary,Simpsonville
+195,Greenville,Public,Mauldin Middle,Simpsonville
+196,Greenville,Public,Carolina High Academy,Greenville
+197,Greenville,Public,Ellen Woodside Elementary,Pelzer
+198,Greenville,Public,Mauldin Elementary,Simpsonville
+199,Greenville,Public,Bryson Middle,Simpsonville
+200,Greenville,Public,Woodmont Middle,Piedmont
+201,Greenville,Public,Plain Elementary,simpsonville
+202,Greenville,Public,Hillcrest Middle,Simpsonville
+203,Greenville,Public,Hughes Academy of Science and Technology,Greenville
+204,Greenville,Public,Robert E. Cashion Elementary,Greenville
+205,Greenville,Public,Greer Middle,Greer
+206,Greenville,Public,GREEN Charter School Greenville,Greenville
+207,Greenville,Public,Blue Ridge High,Greer
+208,Greenville,Public,Southside High,Greenville
+209,Greenville,Public,Riverside Middle,Greer
+210,Greenville,Public,Fountain Inn Elementary,Fountain Inn
+211,Greenville,Public,Berea High,Greenville
+212,Greenville,Private,Bob Jones Academy,Greenville
+213,Greenville,Private,Southside Christian School,Simpsonville
+214,Greenville,Private,Christ Church Episcopal School,Greenville
+215,Greenville,Private,Christ Church Episcopal School,Greenville
+216,Greenville,Public,Travelers Rest High,Travelers Rest
+217,Greenville,Public,Woodland Elementary,Greer
+218,Greenville,Public,Greer High,Greer
+219,Greenville,Public,Eastside High,Taylors
+220,Greenville,Public,Legacy Early College,Greenville
+221,Greenville,Public,Rudolph G. Gordon School at Jones Mill,Simpsonville
+222,Greenville,Public,Fountain Inn High School,Fountain Inn
+223,Greenville,Public,Greenville Senior High Academy,Greenville
+224,Greenville,Public,Wade Hampton High,Greenville
+225,Greenville,Public,Riverside High,GREER
+226,Greenville,Public,Heron Virtual Academy of South Carolina,Greenville
+227,Greenville,Public,Hillcrest High,Simpsonville
+228,Greenville,Public,J. L. Mann High Academy,Greenville
+229,Greenville,Public,Woodmont High,Piedmont
+230,Greenville,Public,Mauldin High,Mauldin
+231,Greenville,Public,Cyber Academy of South Carolina,Greenville
+232,Greenville,Private,Camperdown Academy,Greenville
+233,Greenwood,Private,Cambridge Academy,Greenwood
+234,Greenwood,Public,Ware Shoals High,Ware Shoals
+235,Greenwood,Public,Ware Shoals Elementary Middle,Ware Shoals
+236,Greenwood,Public,Ninety Six Primary School,Ninety Six
+237,Greenwood,Public,Ninety Six Elementary School,Ninety
+238,Greenwood,Public,Hodges Elementary,Hodges
+239,Greenwood,Public,Edgewood Middle School,Ninety Six
+240,Greenwood,Public,Pinecrest Elementary,Greenwood
+241,Greenwood,Public,Lakeview Elementary,Greenwood
+242,Greenwood,Public,Ninety Six High School,ninety six
+243,Greenwood,Public,Woodfields Elementary,Greenwood
+244,Greenwood,Public,Mathews Elementary,Greenwood
+245,Greenwood,Public,Eleanor S. Rice Elementary,Greenwood
+246,Greenwood,Public,Greenwood Charter Academy,Greenwood
+247,Greenwood,Public,Brewer Middle,Greenwood
+248,Greenwood,Public,Dr. Benjamin E. Mays Elementary,Greenwood
+249,Greenwood,Public,Northside Middle,Greenwood
+250,Greenwood,Public,Westview Middle,Greenwood
+251,Greenwood,Public,Emerald High,Greenwood
+252,Greenwood,Public,Greenwood High,Greenwood
+253,Laurens,Private,Fountain Inn Christian School,Fountain Inn
+254,Laurens,Private,Lighthouse Christian Academy,Enoree
+255,Laurens,Public,Sanders Middle,Laurens
+256,Laurens,Public,Waterloo Elementary,Waterloo
+257,Laurens,Public,Joanna-Woodson Elementary,Joanna
+258,Laurens,Private,Laurens Academy,Laurens
+259,Laurens,Public,Laurens Middle,Laurens
+260,Laurens,Public,Ware Shoals Primary,Ware Shoals
+261,Laurens,Public,Ford Elementary,Laurens
+262,Laurens,Public,Clinton Elementary,Clinton
+263,Laurens,Public,Laurens Elementary,Laurens
+264,Laurens,Public,E. B. Morse Elementary,Laurens
+265,Laurens,Public,Eastside Elementary,Clinton
+266,Laurens,Public,Clinton Middle,Clinton
+267,Laurens,Public,Thornwell Charter School,Clinton
+268,Laurens,Public,Hickory Tavern Elementary/Middle,Gray Court
+269,Laurens,Public,Gray Court-Owings Elementary/Middle,Gray Court
+270,Laurens,Public,Clinton High,Clinton
+271,Laurens,Public,Laurens Dist 55 High,Laurens
+272,McCormick,Public,SC Governor's School for Agriculture at John de Ia Howe,McCormick
+273,McCormick,Public,McCormick Middle,McCormick
+274,McCormick,Public,McCormick High,McCormick
+275,McCormick,Public,McCormick Elementary,McCormick
+276,Oconee,Private,Poplar Springs SDA School,Westminster
+277,Oconee,Private,Trinity Baptist Preschool,Seneca
+278,Oconee,Private,Cherokee Creek Boys School,Westminster
+279,Oconee,Private,Foothills Christian School,Westmnster
+280,Oconee,Private,Foothills Christian School,Westmnster
+281,Oconee,Private,Oconee Christian Academy,Seneca
+282,Oconee,Public,Tamassee-Salem Elementary,Tamassee
+283,Oconee,Public,Keowee Elementary,Seneca
+284,Oconee,Public,Orchard Park Elementary,Westminster
+285,Oconee,Public,Westminster Elementary,Westminster
+286,Oconee,Public,Blue Ridge Elementary,Seneca
+287,Oconee,Public,James M. Brown Elementary,Walhalla
+288,Oconee,Public,Ravenel Elementary,Seneca
+289,Oconee,Public,Fair-Oak Elementary,Westminster
+290,Oconee,Public,Northside Elementary,Seneca
+291,Oconee,Public,Walhalla Elementary,West Union
+292,Oconee,Public,West Oak Middle,Westminster
+293,Oconee,Public,West-Oak High,Westminster
+294,Oconee,Public,Walhalla Middle,Walhalla
+295,Oconee,Public,Seneca High,Seneca
+296,Oconee,Public,Walhalla High,Walhalla
+297,Pickens,Private,Clemson Montessori,Clemson
+298,Pickens,Private,Missionary Christian School,Pickens
+299,Pickens,Private,Lakeview Christian School,Pickens
+300,Pickens,Public,Summit Academy,Pickens
+301,Pickens,Private,Easley Christian School,Easley
+302,Pickens,Public,Youth Leadership Academy,Pickens
+303,Pickens,Public,Ambler Elementary,Pickens
+304,Greenville,Public,Slater Marietta Elementary,Marietta
+305,Pickens,Public,Pickens Middle,Pickens
+306,Pickens,Public,Dacusville Middle,Easley
+307,Pickens,Public,Pickens Elementary,Pickens
+308,Pickens,Public,Liberty Middle,Liberty
+309,Pickens,Public,Liberty Elementary,Liberty
+310,Pickens,Public,Liberty Primary School,Liberty
+311,Pickens,Public,Central Academy of the Arts,Central
+312,Pickens,Public,McKissick Academy of Science & Technology,Easley
+313,Pickens,Public,Six Mile Elementary,Six Mile
+314,Pickens,Public,Hagood Elementary,Pickens
+315,Pickens,Public,Crosswell Elementary,Easley
+316,Pickens,Public,Dacusville Elementary,Easley
+317,Pickens,Public,R. C. Edwards Middle,Central
+318,Pickens,Public,East End Elementary,Easley
+319,Pickens,Public,West End Elementary,Easley
+320,Pickens,Public,Liberty High,Liberty
+321,Pickens,Public,Forest Acres Elementary,Easley
+322,Pickens,Public,Clemson Elementary,Clemson
+323,Pickens,Public,Richard H. Gettys Middle,Easley
+324,Pickens,Public,Pickens High,Pickens
+325,Pickens,Public,D. W. Daniel High,Central
+326,Pickens,Public,Easley High,Easley
+327,Spartanburg,Private,Legacy Christian School,Spartanburg
+328,Spartanburg,Private,UMC of the Covenant Child Development Center,Boiling Springs
+329,Spartanburg,Public,SC School for the Blind Elem/Middle,Spartanburg
+330,Spartanburg,Private,Montessori Academy - Spartanburg,Spartanburg
+331,Spartanburg,Public,SC School for the Blind High,Spartanburg
+332,Spartanburg,Private,St. Paul United Methodist Preschool,Sparanburg
+333,Spartanburg,Public,SC School for the Deaf High,Spartanburg
+334,Spartanburg,Private,St. Paul the Apostle Catholic School,Spartanburg
+335,Spartanburg,Public,Cedar Springs Academy,Spartanburg
+336,Spartanburg,Public,SC School for the Deaf Elem/Middle,Spartanburg
+337,Spartanburg,Private,Eddlemon Adventist School,Spartanburg
+338,Spartanburg,Private,Mountain View Christian Academy,Cowpens
+339,Spartanburg,Public,Meeting Street Academy - Spartanburg,Spartanburg
+340,Spartanburg,Public,Landrum Middle,Landrum
+341,Spartanburg,Private,Westgate Christian School,Spartanburg
+342,Spartanburg,Public,Cooley Springs-Fingerville Elementary,Chesnee
+343,Spartanburg,Public,Mayo Elementary,Mayo
+344,Spartanburg,Public,Cannons Elementary,Spartanburg
+345,Spartanburg,Public,Fairforest Middle,Spartanburg
+346,Spartanburg,Private,Oakbrook Preparatory Schools,Spartanburg
+347,Spartanburg,Public,Lone Oak Elementary,Spartanburg
+348,Spartanburg,Public,Inman Intermediate,Inman
+349,Spartanburg,Public,Jesse S. Bobo Elementary,Spartanburg
+350,Spartanburg,Public,New Prospect Elementary,Inman
+351,Spartanburg,Public,Mary H. Wright Elementary,Spartanburg
+352,Spartanburg,Public,Woodland Heights Elementary,Spartanburg
+353,Spartanburg,Public,Cowpens Elementary,Cowpens
+354,Spartanburg,Public,Arcadia Elementary,Spartanburg
+355,Spartanburg,Public,Spartanburg Preparatory School,Spartanburg
+356,Spartanburg,Public,T. E. Mabry Middle,Inman
+357,Spartanburg,Public,GREEN Charter School Spartanburg,Spartanburg
+358,Spartanburg,Public,Pacolet Elementary,Pacolet
+359,Spartanburg,Public,O. P. Earle Elementary,Landrum
+360,Spartanburg,Public,Inman Elementary,Inman
+361,Spartanburg,Public,E. P. Todd School,Spartanburg
+362,Spartanburg,Public,Holly Springs-Motlow Elementary,Campobello
+363,Spartanburg,Private,Spartanburg Day School,Spartanburg
+364,Spartanburg,Public,Pauline-Glenn Springs Elementary,Pauline
+365,Spartanburg,Public,The Cleveland Academy of Leadership,Spartanburg
+366,Spartanburg,Public,Florence Chapel Middle,Duncan
+367,Spartanburg,Public,Jesse Boyd Elementary,Spartanburg
+368,Spartanburg,Public,Berry Shoals Elementary,Duncan
+369,Spartanburg,Public,Tyger River Elementary,Duncan
+370,Spartanburg,Public,Carlisle-Foster's Grove Elementary,Chesnee
+371,Spartanburg,Public,Landrum High,Campobello
+372,Spartanburg,Public,D. R. Hill Middle,Lyman
+373,Spartanburg,Public,Mountain View Preparatory,Spartanburg
+374,Spartanburg,Public,Clifdale Middle,Spartanburg
+375,Spartanburg,Public,Chesnee Middle,Chesnee
+376,Spartanburg,Public,Duncan Elementary School of the Arts,Duncan
+377,Spartanburg,Public,Wellford Academy of Science and Technology,Wellford
+378,Spartanburg,Private,Spartanburg Christian Academy,Spartanburg
+379,Spartanburg,Public,Global Academy of SC,Spartanburg
+380,Spartanburg,Public,Chesnee Elementary,Chesnee
+381,Spartanburg,Public,Pine St. Elementary,Spartanburg
+382,Spartanburg,Public,Woodruff Primary,Woodruff
+383,Spartanburg,Public,Anderson Mill Elementary,Moore
+384,Spartanburg,Public,Carver Middle,Spartanburg
+385,Spartanburg,Public,Reidville Elementary,Reidville
+386,Spartanburg,Public,Beech Springs Middle,Duncan
+387,Spartanburg,Public,West View Elementary,Spartanburg
+388,Spartanburg,Public,Woodruff Elementary,Woodruff
+389,Spartanburg,Public,Oakland Elementary,Inman
+390,Spartanburg,Public,James H. Hendrix Elementary,Boiling Springs
+391,Spartanburg,Public,Lyman Elementary,Lyman
+392,Spartanburg,Public,Woodruff Middle,Woodruff
+393,Spartanburg,Public,Abner Creek Middle,Greer
+394,Spartanburg,Public,Chesnee High,Chesnee
+395,Spartanburg,Public,River Ridge Elementary,Moore
+396,Spartanburg,Public,R. P. Dawkins Middle,Moore
+397,Spartanburg,Public,L. E. Gable Middle,Roebuck
+398,Spartanburg,Public,Abner Creek Academy,Duncan
+399,Spartanburg,Public,Drayton Mills Elementary,Spartanburg
+400,Spartanburg,Public,Campobello-Gramling School,Campobello
+401,Spartanburg,Public,Shoally Creek Elementary,Boiling Springs
+402,Spartanburg,Public,Libertas Academy - Boiling Springs,Boiling Springs
+403,Spartanburg,Public,Fairforest Elementary,Spartanburg
+404,Spartanburg,Public,Boiling Springs Elementary,Boiling Springs
+405,Spartanburg,Public,Woodruff High,Woodruff
+406,Spartanburg,Public,Roebuck Elementary,Roebuck
+407,Spartanburg,Public,Broome High,Spartanburg
+408,Spartanburg,Public,James Byrnes Freshman Academy,Duncan
+409,Spartanburg,Public,Sugar Ridge Elementary,Boiling Springs
+410,Spartanburg,Public,Dorman Freshman Campus,Roebuck
+411,Spartanburg,Public,McCracken Middle,Spartanburg
+412,Spartanburg,Public,Rainbow Lake Middle,Chesnee
+413,Spartanburg,Public,Chapman High,Inman
+414,Spartanburg,Public,Boiling Springs Middle,Inman
+415,Spartanburg,Public,High Point Academy,Spartanburg
+416,Spartanburg,Public,Spartanburg High,Spartanburg
+417,Spartanburg,Public,James F. Byrnes High,Duncan
+418,Spartanburg,Public,Boiling Springs High,Boiling Springs
+419,Spartanburg,Public,Dorman High,Roebuck
+420,Union,Private,Union Christian Day School,Union
+421,Union,Public,Foster Park Elementary,Union
+422,Union,Public,Monarch Elementary,Union
+423,Union,Public,Buffalo Elementary,Buffalo
+424,Union,Public,Jonesville Elementary/Middle,Jonesville
+425,Union,Public,Sims Middle,Union
+426,Union,Public,Union County High,Union

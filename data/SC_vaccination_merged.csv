@@ -1,0 +1,427 @@
+﻿OBJECTID *,Shape *,ID,Region,County,Type,School.Name,City,Grade.Range,Total.Students,Percent.Immunized,county_norm,school_key,full_address,latitude,longitude,_merge
+1,Point,1,Upstate,Abbeville,Private,Lighthouse Christian School,Abbeville,'K5-12,65,0.462,abbeville,lighthouse christian school,"2918 SC-72, Abbeville, SC 29620",34.187818,-82.243849,left_only
+2,Point,2,Upstate,Abbeville,Private,Shiloh Christian School,Due West,'K5-12th,75,0.307,abbeville,shiloh christian school,"2604 HWY 184 W, DUE WEST, SC 29639",34.299716,-82.450329,both
+3,Point,3,Upstate,Abbeville,Public,John C. Calhoun Elementary,Calhoun Falls,'4K-5th grade,99,0.949,abbeville,john c. calhoun elementary,"750 North Calhoun Shores Parkway, Calhoun Falls, SC 29628",34.103701,-82.597752,both
+4,Point,4,Upstate,Abbeville,Public,Calhoun Falls Charter,calhoun falls,'6-12,145,0.993,abbeville,calhoun falls charter,"205 Edgefield St, Calhoun Falls, SC 29628",34.099411,-82.596185,left_only
+5,Point,5,Upstate,Abbeville,Public,Diamond Hill Elementary,Abbeville,'PK-6th,227,0.934,abbeville,diamond hill elementary,"104 Lake Secession Road, Abbeville, SC 29620",34.255882,-82.564823,both
+6,Point,6,Upstate,Abbeville,Public,Westwood Elementary,Abbeville,'3rd-5th,271,0.926,abbeville,westwood elementary,"124 Highway 28 Bypass, Abbeville, SC 29620",34.158269,-82.398414,both
+7,Point,7,Upstate,Abbeville,Public,Wright Middle,Abbeville,'6-8,305,0.97,abbeville,wright middle,"111 Highway 71, Abbeville, SC 29620",34.186493,-82.40279,both
+8,Point,8,Upstate,Abbeville,Public,Long Cane Primary,Abbeville,'K3-12,322,0.938,abbeville,long cane primary,"815 East Greenwood Street, Abbeville, SC 29620",34.187266,-82.351847,both
+9,Point,9,Upstate,Abbeville,Public,Cherokee Trail Elementary,Donalds,'k5-6th,350,0.931,abbeville,cherokee trail elementary,"6219 Highway 184 East, Donalds, SC 29638",34.364107,-82.355559,both
+10,Point,10,Upstate,Abbeville,Public,Abbeville High,Abbeville,'9-12,470,0.977,abbeville,abbeville high,"701 Washington Street, Abbeville, SC 29620",34.187425,-82.374457,both
+11,Point,11,Upstate,Greenwood,Public,Merrywood Elementary,Greenwood,'K4-5,532,0.959,abbeville,merrywood elementary,"329 Deadfall Rd W, Greenwood, SC 29649",34.245085,-82.187644,left_only
+12,Point,12,Upstate,Abbeville,Public,Dixie High,Due West,'7-12,542,0.921,abbeville,dixie high,"1 Haynes Street, Due West, SC 29639",34.327491,-82.388343,both
+13,Point,13,Upstate,Anderson,Private,West Anderson Christian Academy,Anderson,'Preschool-k5,<Null>,0.833,anderson,west anderson christian academy,"101 Rogers St Anderson, SC 29625",34.513213,-82.666925,left_only
+14,Point,14,Upstate,Anderson,Private,Covenant Christian Academy - Anderson,Anderson,'2K-5K,13,0.923,anderson,covenant christian academy - anderson,"4521 Liberty Hwy, Anderson, SC 29621",34.574689,-82.691578,left_only
+15,Point,15,Upstate,Anderson,Private,Central Presbyterian Preschool,Anderson,'2 years through,15,0.8,anderson,central presbyterian preschool,"1404 N BLVD, ANDERSON, SC 29621",34.51816,-82.647611,both
+16,Point,16,Upstate,Anderson,Private,Montessori School of Anderson,Anderson,'PK-12,52,0.885,anderson,montessori school of anderson,"280 SAM MCGEE RD, ANDERSON, SC 29621",34.5633,-82.640761,both
+17,Point,17,Upstate,Anderson,Public,Anderson Five Charter School,Anderson,'9-12,58,0.983,anderson,anderson five charter school,"1225 South McDuffie Street, Anderson, SC 29624",34.494473,-82.645751,both
+18,Point,18,Upstate,Anderson,Private,Anderson Christian School,Anderson,'K3-12,129,0.814,anderson,anderson christian school,"3902 LIBERTY HWY, ANDERSON, SC 29621",34.55679,-82.681611,both
+19,Point,19,Upstate,Anderson,Private,Temple Christian Academy,Anderson,'K5-12,136,0.868,anderson,temple christian academy,"2905 STANDRIDGE RD, ANDERSON, SC 29625",34.50899,-82.694841,both
+20,Point,20,Upstate,Anderson,Private,St. Joseph Catholic School - Anderson,Anderson,'PreK-8th,139,0.928,anderson,st. joseph catholic school - anderson,"1200 Cornelia Rd, Anderson, SC 29621",34.526586,-82.631389,left_only
+21,Point,21,Upstate,Anderson,Private,New Covenant School,Anderson,'K3-12th grade,157,0.879,anderson,new covenant school,"303 SIMPSON RD, ANDERSON, SC 29621",34.53763,-82.625811,both
+22,Point,22,Upstate,Pickens,Public,Lakes and Bridges Charter School,Easley,'1st-8th,201,0.905,anderson,lakes and bridges charter school,"1600 E Main St, Easley, SC 29640",34.829069,-82.574861,left_only
+23,Point,23,Upstate,Anderson,Public,Wright Elementary,Belton,'5K-5th,223,0.951,anderson,wright elementary,"1136 Wright School Road, Belton, SC 29627",34.398738,-82.528312,both
+24,Point,24,Upstate,Anderson,Public,Riverside Middle,Pendleton,'7-8,242,0.921,anderson,riverside middle,"458 Riverside Street, Pendleton, SC 29670",34.65471,-82.796031,both
+25,Point,25,Upstate,Anderson,Public,Townville Elementary,Townville,'4K-6th grade,243,0.897,anderson,townville elementary,"105 Townville School Road, Townville, SC 29689",34.563258,-82.903356,both
+26,Point,26,Upstate,Anderson,Private,Oakwood Christian School,Anderson,'k-12,264,0.784,anderson,oakwood christian school,"304 PEARMAN DAIRY RD, ANDERSON, SC 29625",34.50673,-82.682571,both
+27,Point,27,Upstate,Anderson,Public,West Pelzer Elementary,Pelzer,'K4-5th,302,0.927,anderson,west pelzer elementary,"110 West Stewart Street, West Pelzer, SC 29669",34.645625,-82.480914,both
+28,Point,28,Upstate,Anderson,Public,Honea Path Middle,Honea Path,'6th-8th,302,0.987,anderson,honea path middle,"107 Brock Avenue, Honea Path, SC 29654",34.448429,-82.398455,both
+29,Point,29,Upstate,Anderson,Public,Calhoun Academy of the Arts,Anderson,'K4-5,338,0.953,anderson,calhoun academy of the arts,"1520 East Calhoun Street, Anderson, SC 29621",34.523719,-82.625132,both
+30,Point,30,Upstate,Anderson,Public,South Carolina Preparatory Academy,Anderson,'6-12th,359,0.827,anderson,south carolina preparatory academy,"1650 E Greenville St Suite H, Anderson, SC 29621",34.532277,-82.632351,left_only
+31,Point,31,Upstate,Anderson,Public,Homeland Park Primary,Anderson,'K4-2nd grade,369,0.959,anderson,homeland park primary,"3519 Wilmont Street, Anderson, SC 29624",34.462367,-82.656323,both
+32,Point,32,Upstate,Anderson,Public,Flat Rock Elementary,Anderson,'K4 - 5th,376,0.979,anderson,flat rock elementary,"115 Thompson Road, Anderson, SC 29624",34.408568,-82.64232,both
+33,Point,33,Upstate,Anderson,Public,Marshall Primary,Belton,'K3-2nd,384,0.932,anderson,marshall primary,"218 Bannister Street, Belton, SC 29627",34.523119,-82.502731,both
+34,Point,34,Upstate,Anderson,Public,New Prospect Elementary,Anderson,'4k-5th,387,0.964,anderson,new prospect elementary,"126 New Prospect Church Road, Anderson, SC 29625",34.507079,-82.704312,both
+35,Point,35,Upstate,Anderson,Public,La France Elementary,La France,'4k - 6th,398,0.94,anderson,la france elementary,"550 Williams Street, Pendleton, SC 29670",34.61345,-82.76485,both
+36,Point,36,Upstate,Anderson,Public,Varennes Elementary,Anderson,'3rd-5th,398,0.95,anderson,varennes elementary,"1820 Highway 29 South, Anderson, SC 29626",34.469678,-82.681986,both
+37,Point,37,Upstate,Anderson,Public,Southwood Academy for the Arts,Anderson,'6-8,405,0.965,anderson,southwood academy for the arts,"1110 Southwood Street, Anderson, SC 29624",34.490179,-82.662153,both
+38,Point,38,Upstate,Anderson,Public,Iva Elementary,Iva,'K4-5th,407,0.943,anderson,iva elementary,"803 Antreville Highway, Iva, SC 29655",34.312168,-82.646005,both
+39,Point,39,Upstate,Anderson,Public,Belton Elementary,Belton,'3-5,422,0.972,anderson,belton elementary,"202 Watkins Street, Belton, SC 29627",34.515502,-82.494484,both
+40,Point,40,Upstate,Anderson,Public,North Pointe Elementary,Anderson,'K4-5th,439,0.957,anderson,north pointe elementary,"3325 Highway 81 North, Anderson, SC 29621",34.581688,-82.623862,both
+41,Point,41,Upstate,Anderson,Public,Mt. Lebanon Elementary,Pendleton,'K4-6th,466,0.946,anderson,mt. lebanon elementary,"2850 Lebanon Road, Pendleton, SC 29670",34.603821,-82.699635,both
+42,Point,42,Upstate,Anderson,Public,Whitehall Elementary,Anderson,'5k-5,469,0.949,anderson,whitehall elementary,"702 Whitehall Road, Anderson, SC 29625",34.530447,-82.679298,both
+43,Point,43,Upstate,Anderson,Public,Honea Path Elementary,Honea Path,'K5-5th Grade,476,0.958,anderson,honea path elementary,"806 East Greer Street, Honea Path, SC 29654",34.445072,-82.381165,both
+44,Point,44,Upstate,Anderson,Public,Belton Middle,Belton,'6-8,476,0.943,anderson,belton middle,"102 Cherokee Road, Belton, SC 29627",34.513918,-82.510247,both
+45,Point,45,Upstate,Anderson,Public,Nevitt Forest Elementary,Anderson,'5K-5th grade,478,0.95,anderson,nevitt forest elementary,"1401 Bolt Drive, Anderson, SC 29621",34.493199,-82.602107,both
+46,Point,46,Upstate,Anderson,Public,Starr Elementary,Starr,'K4-5th Grade,483,0.957,anderson,starr elementary,"400 Professor Brown Lane, Starr, SC 29684",34.385122,-82.694861,both
+47,Point,47,Upstate,Anderson,Public,Hunt Meadows Elementary,Easley,'K3 - 5th Grade,487,0.969,anderson,hunt meadows elementary,"420 Hunt Road, Easley, SC 29642",34.756069,-82.574762,both
+48,Point,48,Upstate,Anderson,Public,Centerville Elementary,Anderson,'K4-5,494,0.945,anderson,centerville elementary,"1529 Whitehall Road, Anderson, SC 29625",34.528032,-82.707576,both
+49,Point,49,Upstate,Anderson,Public,Belton Preparatory Academy,Belton,'K5-8,499,0.874,anderson,belton preparatory academy,"5901 Belton Highway, Belton, SC 29627",34.496615,-82.534151,both
+50,Point,50,Upstate,Anderson,Public,McLees Elementary,Anderson,'K5-5,503,0.958,anderson,mclees elementary,"4900 Dobbins Bridge Road, Anderson, SC 29626",34.478514,-82.749293,both
+51,Point,51,Upstate,Anderson,Public,Cedar Grove Elementary,Williamston,'K4-5th,530,0.96,anderson,cedar grove elementary,"107 Melvin Lane, Williamston, SC 29697",34.59276,-82.496504,both
+52,Point,52,Upstate,Greenville,Public,Greenville Technical Charter High School,Greenville,'9-12,541,0.937,anderson,greenville technical charter high school,"506 S Pleasantburg Dr Building 119, Greenville, SC 29607",34.827131,-82.375949,left_only
+53,Point,53,Upstate,Anderson,Public,Palmetto Elementary,Williamston,'K3- 5th,548,0.965,anderson,palmetto elementary,"1 Roberts Boulevard, Williamston, SC 29697",34.630317,-82.473549,both
+54,Point,54,Upstate,Anderson,Public,Pendleton Elementary,Pendleton,'4K-6th,549,0.971,anderson,pendleton elementary,"902 East Queen Street, Pendleton, SC 29670",34.65549,-82.768638,both
+55,Point,55,Upstate,Anderson,Public,Concord Elementary,Anderson,'4K-5,597,0.958,anderson,concord elementary,"2701 Calrossie Road, Anderson, SC 29621",34.536298,-82.657372,both
+56,Point,56,Upstate,Anderson,Public,Starr-Iva Middle,Starr,'6-8,599,0.314,anderson,starr-iva middle,"1034 Rainey Road, Starr, SC 29684",34.382732,-82.72611,both
+57,Point,57,Upstate,Anderson,Public,McCants Middle,Anderson,'6-8,616,0.93,anderson,mccants middle,"2123 Marchbanks Avenue, Anderson, SC 29621",34.529547,-82.630467,both
+58,Point,58,Upstate,Anderson,Public,Concrete Primary,Easley,'Pre K- 2,639,0.92,anderson,concrete primary,"535 Powdersville Main, Easley, SC 29642",34.78171,-82.489778,both
+59,Point,59,Upstate,Anderson,Public,Glenview Middle,Anderson,'6th-8th,672,0.939,anderson,glenview middle,"2575 Old Williamston Road, Anderson, SC 29621",34.543257,-82.605904,both
+60,Point,60,Upstate,Anderson,Public,Wren Elementary,Piedmont,'K4 - 5th,680,0.934,anderson,wren elementary,"226 Roper Road, Piedmont, SC 29673",34.718988,-82.545904,both
+61,Point,61,Upstate,Anderson,Public,Midway Elementary,Anderson,'4K-5,686,0.917,anderson,midway elementary,"1221 Harriett Circle, Anderson, SC 29621",34.559684,-82.615606,both
+62,Point,62,Upstate,Anderson,Public,Spearman Elementary,Piedmont,'K4-5th,721,0.943,anderson,spearman elementary,"2001 Easley Highway, Piedmont, SC 29673",34.681377,-82.547412,both
+63,Point,63,Upstate,Anderson,Public,Palmetto Middle,Williamston,'6-8,729,0.953,anderson,palmetto middle,"803 North Hamilton Street, Williamston, SC 29697",34.631275,-82.479523,both
+64,Point,64,Upstate,Anderson,Public,Crescent High,Iva,'9-12,790,0.954,anderson,crescent high,"9104 Highway 81 South, Iva, SC 29655",34.340135,-82.688823,both
+65,Point,65,Upstate,Anderson,Public,Powdersville Elementary,Greenville,'3-5,798,0.947,anderson,powdersville elementary,"139 Hood Road, Greenville, SC 29611",34.797842,-82.488307,both
+66,Point,66,Upstate,Anderson,Public,Powdersville Middle,Greenville,'6-8,843,0.929,anderson,powdersville middle,"135 Hood Road, Greenville, SC 29611",34.796215,-82.488774,both
+67,Point,67,Upstate,Anderson,Public,Wren Middle,Piedmont,'6-8,935,0.947,anderson,wren middle,"1010 Wren School Road, Piedmont, SC 29673",34.72458,-82.544922,both
+68,Point,68,Upstate,Anderson,Public,South Carolina Preparatory Leadership School,Anderson,'6-12th,935,0.776,anderson,south carolina preparatory leadership school,"1650 E Greenville St Suite H, Anderson, SC 29621",34.532277,-82.632351,left_only
+69,Point,69,Upstate,Anderson,Public,Pendleton High,Anderson,'9-12,944,0.968,anderson,pendleton high,"7324 Highway 187, Anderson, SC 29625",34.612809,-82.783812,both
+70,Point,70,Upstate,Anderson,Public,Palmetto High,Williamston,'9-12,990,0.975,anderson,palmetto high,"804 North Hamilton Street, Williamston, SC 29697",34.632052,-82.476987,both
+71,Point,71,Upstate,Anderson,Public,Belton Honea Path High,Honea Path,'9-12,1023,0.98,anderson,belton honea path high,"11000 Belton-Honea Path Highway, Honea Path, SC 29654",34.473593,-82.443982,both
+72,Point,72,Upstate,Anderson,Public,Powdersville High,Greenville,'9-12,1041,0.939,anderson,powdersville high,"145 Hood Road, Greenville, SC 29611",34.801067,-82.486992,both
+73,Point,73,Upstate,Anderson,Public,Robert Anderson Middle,Anderson,'6-8,1115,0.965,anderson,robert anderson middle,"2302 Dobbins Bridge Road, Anderson, SC 29625",34.494784,-82.689022,both
+74,Point,74,Upstate,Anderson,Public,Wren High,Piedmont,'9-12,1261,0.952,anderson,wren high,"905 Wren School Road, Piedmont, SC 29673",34.721781,-82.545469,both
+75,Point,75,Upstate,Anderson,Public,Westside High,Anderson,'9-12,1692,0.976,anderson,westside high,"806 Pearman Dairy Road, Anderson, SC 29625",34.517665,-82.689659,both
+76,Point,76,Upstate,Anderson,Public,T. L. Hanna High,Anderson,'9-12,1950,0.953,anderson,t. l. hanna high,"2600 Highway 81 North, Anderson, SC 29621",34.567223,-82.623533,both
+77,Point,77,Upstate,Cherokee,Public,Draytonville Elementary,Gaffney,'3K to 5,242,0.93,cherokee,draytonville elementary,"2373 Wilkinsville Highway, Gaffney, SC 29340",35.033646,-81.58529,both
+78,Point,78,Upstate,Cherokee,Public,Corinth Elementary,Gaffney,'4K-5th,261,0.95,cherokee,corinth elementary,"128 Corinth Road, Gaffney, SC 29340",35.009051,-81.646175,both
+79,Point,79,Upstate,Cherokee,Public,Blacksburg Primary,Blacksburg,'4k-2nd,276,0.877,cherokee,blacksburg primary,"1010 East Cherokee Street, Blacksburg, SC 29702",35.12885,-81.48909,both
+80,Point,80,Upstate,Cherokee,Public,Blacksburg Elementary,Blacksburg,'3rd-5th,311,0.965,cherokee,blacksburg elementary,"402 Hardin Street, Blacksburg, SC 29702",35.114683,-81.518197,both
+81,Point,81,Upstate,Cherokee,Public,Goucher Charter Academy,Gaffney,'K4-8th grade,312,0.946,cherokee,goucher charter academy,"604 Goucher School, Gaffney, SC 29304",34.98768,-81.712578,both
+82,Point,82,Upstate,Cherokee,Public,Northwest Elementary,Gaffney,'4K-5th,372,0.935,cherokee,northwest elementary,"840 Green River Road, Gaffney, SC 29341",35.10368,-81.763402,both
+83,Point,83,Upstate,Cherokee,Public,John E. Ewing Middle,Gaffney,'6-8,381,0.961,cherokee,john e. ewing middle,"171 East Junior High Road, Gaffney, SC 29340",35.056339,-81.630047,both
+84,Point,84,Upstate,Cherokee,Public,Luther Vaughan Elementary,Gaffney,'4K-5th,385,0.93,cherokee,luther vaughan elementary,"192 Vaughn Rd, Gaffney, SC 29341",35.098356,-81.639283,left_only
+85,Point,85,Upstate,Cherokee,Public,Blacksburg Middle,Blacksburg,'6-8,396,0.909,cherokee,blacksburg middle,"101 London Street, Blacksburg, SC 29702",35.113259,-81.515544,both
+86,Point,86,Upstate,Cherokee,Public,Limestone-Central Elementary,Gaffney,'4k-5th,412,0.954,cherokee,limestone-central elementary,"727 Pacolet Highway, Gaffney, SC 29341",35.048812,-81.671281,both
+87,Point,87,Upstate,Cherokee,Public,Grassy Pond Elementary,Gaffney,'4k-5th,460,0.92,cherokee,grassy pond elementary,"1146 Boiling Springs Highway, Gaffney, SC 29341",35.133787,-81.667137,both
+88,Point,88,Upstate,Cherokee,Public,Blacksburg High,Blacksburg,'9-12,460,0.976,cherokee,blacksburg high,"201 West Ramseur Drive, Blacksburg, SC 29702",35.114465,-81.514029,both
+89,Point,89,Upstate,Cherokee,Public,B. D. Lee Elementary,Gaffney,'3k-5,477,0.964,cherokee,b. d. lee elementary,"401 Overbrook Drive, Gaffney, SC 29341",35.077335,-81.661669,both
+90,Point,90,Upstate,Cherokee,Public,Cherokee Charter School,gaffney,'4K-10th grade,694,0.745,cherokee,cherokee charter school,"3206 Cherokee Ave, Gaffney, SC 29340",35.079689,-81.603961,left_only
+91,Point,91,Upstate,Cherokee,Public,Gaffney Middle,Gaffney,'6-8,827,0.936,cherokee,gaffney middle,"805 East Frederick Street, Gaffney, SC 29340",35.066659,-81.641258,both
+92,Point,92,Upstate,Cherokee,Public,Gaffney High,Gaffney,'1-9,1793,0.972,cherokee,gaffney high,"149 Twin Lake Road, Gaffney, SC 29341",35.067436,-81.682373,both
+93,Point,93,Upstate,Greenville,Private,Haynsworth School,Greenville,'2K - 5K,<10,1,greenville,haynsworth school,"228 E PARK AVE, GREENVILLE, SC 29601",34.85647,-82.390881,both
+94,Point,94,Upstate,Greenville,Private,White Oak Baptist Church Kindergarten,Greenville,'Infant-K5,<10,1,greenville,white oak baptist church kindergarten,"1805 WADE HAMPTON BLVD, GREENVILLE, SC 29609",34.87734,-82.363921,both
+95,Point,95,Upstate,Greenville,Private,Edward Rd Baptist Church Kindergarten,Greenville,'Babies-K5,10,0.9,greenville,edward rd baptist church kindergarten,"1050 EDWARDS RD, GREENVILLE, SC 29615",34.88485,-82.338051,both
+96,Point,96,Upstate,Greenville,Private,John Knox Weekday Kindergarten,Greenville,'Infants - K5,11,0.818,greenville,john knox weekday kindergarten,"35 SHANNON DR, GREENVILLE, SC 29615",34.879306,-82.342538,both
+97,Point,97,Upstate,Greenville,Private,Westminster Weekday School,Greenville,'Crib-5K,11,1,greenville,westminster weekday school,"2310 AUGUSTA ST, GREENVILLE, SC 29605",34.82223,-82.391481,both
+98,Point,98,Upstate,Greenville,Private,Furman University Child Development Center,Greenville,'3K-5K,12,0.917,greenville,furman university child development center,"1501 DUNCAN CHAPEL RD, GREENVILLE, SC 29617",34.918902,-82.44527,both
+99,Point,99,Upstate,Greenville,Private,First Baptist Day School,Greenville,'Infants-K5,12,1,greenville,first baptist day school,"847 CLEVELAND ST, GREENVILLE, SC 29601",34.832263,-82.380234,both
+100,Point,100,Upstate,Greenville,Public,Aldersgate CDC,Greenville,'K5,15,0.933,greenville,aldersgate cdc,"7 Shannon Dr, Greenville, SC 29615",34.882622,-82.345429,left_only
+101,Point,101,Upstate,Greenville,Private,BEST Skills Academy,Greenville,'5-9,15,1,greenville,best skills academy,"28 BOLT ST, GREENVILLE, SC 29605",34.83389,-82.410971,both
+102,Point,102,Upstate,Greenville,Private,First Presbyterian Academy - Downtown Campus,Greenville,'K3-K5,15,1,greenville,first presbyterian academy - downtown campus,"200 W Washington St, Greenville, SC 29601",34.851879,-82.40081,left_only
+103,Point,103,Upstate,Greenville,Private,Taylors First Baptist Church Kindergarten,Taylors,'K5,20,0.9,greenville,taylors first baptist church kindergarten,"Side of Building, 200 W Main St, Taylors, SC 29687",34.920616,-82.3026,left_only
+104,Point,104,Upstate,Greenville,Private,Montessori School of Mauldin,Mauldin,'6 weeks - 6th gr,32,0.813,greenville,montessori school of mauldin,"205-B E BUTLER RD, MAULDIN, SC 29662",34.782199,-82.301445,both
+105,Point,105,Upstate,Greenville,Private,Conestee Baptist Day School,Conestee,'K5-12,34,0.824,greenville,conestee baptist day school,"145 2ND ST, CONESTEE, SC 29636",34.7653,-82.3517,both
+106,Point,106,Upstate,Greenville,Private,Abundant Life Christian School,Greenville,'K4-8,44,0.795,greenville,abundant life christian school,"630 FARRS BRIDGE RD, GREENVILLE, SC 29611",34.897272,-82.475876,both
+107,Point,107,Upstate,Greenville,Public,Meyer Center for Special Children,Greenville,'3K - 2nd,45,0.933,greenville,meyer center for special children,"1132 Rutherford Road, Greenville, SC 29609",34.883091,-82.377533,both
+108,Point,108,Upstate,Greenville,Private,Chandler School,Greenville,'K-8,47,0.872,greenville,chandler school,"2900 Augusta St, Greenville, SC 29605",34.812974,-82.383538,left_only
+109,Point,109,Upstate,Greenville,Private,Hidden Treasure Christian School,Taylors,'5K-Adult,48,0.875,greenville,hidden treasure christian school,"500 W Lee Rd, Taylors, SC 29687",34.896069,-82.35093,left_only
+110,Point,110,Upstate,Greenville,Private,Upstate Montessori Academy,Greenville,'3K-7th,56,0.732,greenville,upstate montessori academy,"109 N LEACH ST, GREENVILLE, SC 29601",34.845543,-82.416929,both
+111,Point,111,Upstate,Greenville,Public,West Greenville School,Greenville,'6 to 12,59,0.949,greenville,west greenville school,"15 Endel St, Greenville, SC 29611",34.84919,-82.42593,left_only
+112,Point,112,Upstate,Greenville,Private,St. Anthony of Padua School,Greenville,'K3-5th,60,0.75,greenville,st. anthony of padua school,"307 Gower St, Greenville, SC 29611",34.847941,-82.416023,left_only
+113,Point,113,Upstate,Greenville,Private,Tabernacle Christian School,Greenville,'k4-12,72,0.694,greenville,tabernacle christian school,"3931 WHITE HORSE RD, GREENVILLE, SC 29611",34.83035,-82.447201,both
+114,Point,114,Upstate,Greenville,Private,Hope Academy- Landrum Campus,Landrum,'K-12,72,0.806,greenville,hope academy- landrum campus,"424 N Hwy 101, Landrum, SC 29356",35.101011,-82.333704,left_only
+115,Point,115,Upstate,Greenville,Private,Calvary Christian School - Greer,Greer,'5K-12th,88,0.42,greenville,calvary christian school - greer,"101 Calvary St, Greer, SC 29650",34.940337,-82.239437,left_only
+116,Point,116,Upstate,Greenville,Private,Calvary's Kids Preschool,Greer,'K5-12th,88,0.42,greenville,calvary's kids preschool,"101 Calvary St, Greer, SC 29650",34.940337,-82.239437,left_only
+117,Point,117,Upstate,Greenville,Public,Washington Center,Greenville,'3k-12,120,0.875,greenville,washington center,"2 Betty Spencer Drive, Greenville, SC 29607",34.814175,-82.367263,both
+118,Point,118,Upstate,Greenville,Public,Greer Preparatory Academy,Taylors,'6th-7th,150,0.833,greenville,greer preparatory academy,"4520 Locust Hill Road Taylors, SC",34.999564,-82.351263,left_only
+119,Point,119,Upstate,Greenville,Private,Prince of Peace Catholic School,Taylors,'5k-8th,160,0.938,greenville,prince of peace catholic school,"1209 BRUSHY CREEK RD, TAYLORS, SC 29687",34.89659,-82.306071,both
+120,Point,120,Upstate,Greenville,Private,As-Sabeel Academy of Greenville,Greer,'K4-8th,169,0.882,greenville,as-sabeel academy of greenville,"1601 Clement Rd, Greer, SC 29650",34.91973,-82.272058,left_only
+121,Point,121,Upstate,Greenville,Private,Five Oaks Academy,Simpsonville,'2year-8th grade,192,0.88,greenville,five oaks academy,"1101 JONESVILLE RD, SIMPSONVILLE, SC 29681",34.76205,-82.237341,both
+122,Point,122,Upstate,Greenville,Private,Mauldin Christian Academy,Mauldin,'5K-5th,206,0.806,greenville,mauldin christian academy,"150 S MAIN ST, MAULDIN, SC 29662",34.77599,-82.309421,both
+123,Point,123,Upstate,Greenville,Public,Reedy Laurel Elementary,greenville,'k3-2nd,213,0.911,greenville,reedy laurel elementary,"61 Isbell Ln, Greenville, SC 29607",34.811343,-82.345205,left_only
+124,Point,124,Upstate,Greenville,Public,SC Governor's School for the Arts and Humanities,Greenville,'10-12,235,0.953,greenville,sc governor's school for the arts and humanities,"15 University St, Greenville, SC 29601",34.843453,-82.40239,left_only
+125,Point,125,Upstate,Greenville,Public,Tigerville Elementary,Taylors,'K4-5,249,0.851,greenville,tigerville elementary,"25 Tigerville Elementary School Road, Taylors, SC 29687",35.074122,-82.368134,both
+126,Point,126,Upstate,Greenville,Public,East Link Academy,Greenville,'K5 - 8,252,0.853,greenville,east link academy,"78 Global Drive Drive Suite 200, Greenville, SC 29607",34.807649,-82.34331,both
+127,Point,127,Upstate,Greenville,Public,East Link Academy,Greenville,'K5 - 8,252,0.853,greenville,east link academy,"78 Global Drive Drive Suite 200, Greenville, SC 29607",34.807649,-82.34331,both
+128,Point,128,Upstate,Greenville,Private,St. Mary's Catholic School,Greenville,'K3-8,271,0.993,greenville,st. mary's catholic school,"101 Hampton Ave, Greenville, SC 29601",34.85358,-82.40234,left_only
+129,Point,129,Upstate,Greenville,Public,Westcliffe Elementary,Greenville,'k4-5th grade,302,0.957,greenville,westcliffe elementary,"105 Eastbourne Road, Greenville, SC 29611",34.864407,-82.465986,both
+130,Point,130,Upstate,Greenville,Private,Greenville Classical Academy,Greenville,'K4-12th,313,0.728,greenville,greenville classical academy,"2519 WOODRUFF RD, SIMPSONVILLE, SC 29681",34.81014,-82.236991,both
+131,Point,131,Upstate,Greenville,Private,Our Lady of the Rosary School,Greenville,'4k - 12,321,0.732,greenville,our lady of the rosary school,"2 James Dr, Greenville, SC 29605",34.799682,-82.379964,left_only
+132,Point,132,Upstate,Greenville,Public,LEAD Academy,Greenville,'K5-8th,386,0.909,greenville,lead academy,"804 Mauldin Rd., Greenville, SC 29607",34.784237,-82.353064,both
+133,Point,133,Upstate,Greenville,Private,Mitchell Rd Christian Academy,Greenville,'K3-8th Grade,392,0.839,greenville,mitchell rd christian academy,"207 Mitchell Rd, Greenville, SC 29615",34.872202,-82.318425,left_only
+134,Point,134,Upstate,Greenville,Public,GREEN Upstate High School Greenville,Simpsonville,'9-12,396,0.919,greenville,green upstate high school greenville,"356 Bridgeway Boulevard, Simpsonville, SC 29681",34.797735,-82.274049,both
+135,Point,135,Upstate,Greenville,Public,Brook Glenn Elementary,Taylors,'K4-5th grade,397,0.887,greenville,brook glenn elementary,"2003 East Lee Road, Taylors, SC 29687",34.910786,-82.3103,both
+136,Point,136,Upstate,Greenville,Public,Armstrong Elementary,Greenville,'K4-5,407,0.909,greenville,armstrong elementary,"8601 White Horse Road, Greenville, SC 29617",34.904533,-82.463129,both
+137,Point,137,Upstate,Greenville,Public,Alexander Elementary,Greenville,'K4-5,420,0.955,greenville,alexander elementary,"1601 Bramlett Road, Greenville, SC 29611",34.856413,-82.439611,both
+138,Point,138,Upstate,Greenville,Public,Langston Charter Middle,Greenville,'6-8,446,0.926,greenville,langston charter middle,"1950 Woodruff Road, Greenville, SC 29607",34.818986,-82.262397,both
+139,Point,139,Upstate,Greenville,Public,Berea Elementary,Greenville,'5K-5th,446,0.964,greenville,berea elementary,"100 Berea Drive, Greenville, SC 29617",34.88081,-82.456036,both
+140,Point,140,Upstate,Greenville,Private,First Presbyterian Academy - Shannon Forest,Greenville,'K5-12,454,0.841,greenville,first presbyterian academy - shannon forest,"829 Garlington Rd, Greenville, SC 29615",34.841215,-82.271189,left_only
+141,Point,141,Upstate,Greenville,Public,Brashier Middle College Charter High,Simpsonville,'9-12,511,0.945,greenville,brashier middle college charter high,"1830 West Georgia Road Building 203, Simpsonville, SC 29680",34.711484,-82.308703,both
+142,Point,142,Upstate,Greenville,Public,Hollis Academy,Greenville,'K-5,511,0.945,greenville,hollis academy,"200 Goodrich Street, Greenville, SC 29611",34.832544,-82.430139,both
+143,Point,143,Upstate,Greenville,Public,Heritage Elementary,Travelers Rest,'K3-5th,514,0.895,greenville,heritage elementary,"1592 Greer Highway, Travelers Rest, SC 29690",34.998113,-82.47366,both
+144,Point,144,Upstate,Greenville,Public,A.J. Whittenberg Elementary,Greenville,'K4-5,517,0.93,greenville,a.j. whittenberg elementary,"420 Westfield Street, Greenville, SC 29601",34.848479,-82.410076,both
+145,Point,145,Upstate,Greenville,Public,Greer Middle College Charter High,Taylors,'9-12,535,0.899,greenville,greer middle college charter high,"138 West McElhaney Road, Taylors, SC 29687",34.963907,-82.298761,both
+146,Point,146,Upstate,Greenville,Public,Stone Academy,Greenville,'K5-5th,535,0.916,greenville,stone academy,"115 Randall Street, Greenville, SC 29609",34.86545,-82.397234,both
+147,Point,147,Upstate,Greenville,Private,Hampton Park Christian School,Greenville,'K5-12,537,0.749,greenville,hampton park christian school,"875 STATE PARK RD, GREENVILLE, SC 29609",34.89694,-82.395501,both
+148,Point,148,Upstate,Greenville,Public,Summit Drive Elementary,Greenville,'4K-5th,544,0.901,greenville,summit drive elementary,"424 Summit Drive, Greenville, SC 29609",34.875549,-82.381955,both
+149,Point,149,Upstate,Greenville,Public,Sue Cleveland Elementary,Piedmont,'K4-5,550,0.951,greenville,sue cleveland elementary,"375 Woodmont School Road, Piedmont, SC 29673",34.692373,-82.413551,both
+150,Point,150,Upstate,Greenville,Public,Mitchell Road Elementary,Greenville,'K3- 5,553,0.897,greenville,mitchell road elementary,"4124 East North Street Extension, Greenville, SC 29615",34.876525,-82.319401,both
+151,Point,151,Upstate,Greenville,Public,Paris Elementary,Taylors,'K5-5,569,0.9,greenville,paris elementary,"32 East Belvue Road, Taylors, SC 29687",34.906191,-82.362062,both
+152,Point,152,Upstate,Greenville,Public,Thomas E. Kerns Elementary,Greenville,'K4-5th,573,0.918,greenville,thomas e. kerns elementary,"6650 Frontage Road at White Horse Road, Greenville, SC 29605",34.794878,-82.408748,both
+153,Point,153,Upstate,Greenville,Public,Grove Elementary,Piedmont,'5k-5,589,0.929,greenville,grove elementary,"1220 Old Grove Road, Piedmont, SC 29673",34.758513,-82.415776,both
+154,Point,154,Upstate,Greenville,Public,Monaview Elementary,Greenville,'4K to Fifth grade,594,0.973,greenville,monaview elementary,"10 Monaview Street, Greenville, SC 29617",34.868898,-82.437102,both
+155,Point,155,Upstate,Greenville,Public,Welcome Elementary,Greenville,'k-5th,599,0.958,greenville,welcome elementary,"36 East Welcome Road, Greenville, SC 29611",34.820958,-82.44413,both
+156,Point,156,Upstate,Greenville,Public,Augusta Circle Elementary,Greenville,'K5-5th grade,601,0.955,greenville,augusta circle elementary,"100 Winyah Street, Greenville, SC 29605",34.820603,-82.394345,both
+157,Point,157,Upstate,Greenville,Public,Cherrydale Elementary,Greenville,'K4-5th,601,0.948,greenville,cherrydale elementary,"302 Perry Road, Greenville, SC 29609",34.883936,-82.413432,both
+158,Point,158,Upstate,Greenville,Private,St. Joseph's Catholic School - Greenville,Greenville,'6-12,605,0.967,greenville,st. joseph's catholic school - greenville,"100 St Joseph S Dr, Greenville, SC 29607",34.810706,-82.340001,left_only
+159,Point,159,Upstate,Greenville,Public,Duncan Chapel Elementary,Greenville,'K4-5th,608,0.928,greenville,duncan chapel elementary,"210 Duncan Chapel Road, Greenville, SC 29617",34.909605,-82.428157,both
+160,Point,160,Upstate,Greenville,Public,Crestview Elementary,Greer,'K3-5,614,0.904,greenville,crestview elementary,"509 American Legion Road, Greer, SC 29651",34.96289,-82.221933,both
+161,Point,161,Upstate,Greenville,Public,Gateway Elementary,Travelers Rest,'k4-5,622,0.916,greenville,gateway elementary,"200 Hawkins Road, Travelers Rest, SC 29690",34.974032,-82.424608,both
+162,Point,162,Upstate,Greenville,Public,Sevier Middle,Greenville,"'6, 7, 8",641,0.88,greenville,sevier middle,"1000 Piedmont Park Road, Greenville, SC 29609",34.906725,-82.363967,both
+163,Point,163,Upstate,Greenville,Public,Tanglewood Middle,Greenville,'6-8,655,0.977,greenville,tanglewood middle,"44 Merriwoods Drive, Greenville, SC 29611",34.824083,-82.46882,both
+164,Point,164,Upstate,Greenville,Public,East North Street Academy,Greenville,'4K - 5th,657,0.909,greenville,east north street academy,"1720 East North Street, Greenville, SC 29607",34.858537,-82.371184,both
+165,Point,165,Upstate,Greenville,Public,GREEN Charter School Simpsonville,Greenville,'K5 - 8th,679,0.894,greenville,green charter school simpsonville,"356 Bridgeway Blvd, Simpsonville, SC 29681",34.797973,-82.273848,left_only
+166,Point,166,Upstate,Greenville,Public,Fork Shoals School,Pelzer,'K3-5,684,0.936,greenville,fork shoals school,"916 McKelvey Road, Pelzer, SC 29669",34.618166,-82.312195,both
+167,Point,167,Upstate,Greenville,Public,Pelham Road Elementary,Greenville,'K5-5th,703,0.932,greenville,pelham road elementary,"100 All Star Way, Greenville, SC 29615",34.859206,-82.310603,both
+168,Point,168,Upstate,Greenville,Public,Greenville Middle Academy,Greenville,'6-8,710,0.939,greenville,greenville middle academy,"339 Lowndes Avenue, Greenville, SC 29607",34.858191,-82.369402,both
+169,Point,169,Upstate,Greenville,Public,Skyland Elementary,Greer,'k4-5,713,0.877,greenville,skyland elementary,"4221 Highway 14 North, Greer, SC 29651",35.045518,-82.265341,both
+170,Point,170,Upstate,Greenville,Public,Taylors Elementary,Taylors,'K5-5,719,0.924,greenville,taylors elementary,"809 Reid School Road, Taylors, SC 29687",34.932234,-82.330802,both
+171,Point,171,Upstate,Greenville,Public,Northwest Middle,Travlers Rest,'6-8,728,0.942,greenville,northwest middle,"1606 Greer Highway, Travelers Rest, SC 29690",34.999096,-82.476697,both
+172,Point,172,Upstate,Greenville,Public,Berea Middle,Greenville,'6-8,733,0.947,greenville,berea middle,"151 Berea Middle School Road, Greenville, SC 29617",34.914858,-82.454799,both
+173,Point,173,Upstate,Greenville,Public,Ralph Chandler Middle,Simpsonville,'6-8,734,0.914,greenville,ralph chandler middle,"4231 Fork Shoals Road, Simpsonville, SC 29680",34.638851,-82.300391,both
+174,Point,174,Upstate,Greenville,Public,Sterling School,Greenville,'K3-8th grade,736,0.932,greenville,sterling school,"99 John McCarroll Way, Greenville, SC 29607",34.83527,-82.37023,both
+175,Point,175,Upstate,Greenville,Public,Simpsonville Elementary,Simpsonville,'PK-5,741,0.914,greenville,simpsonville elementary,"200 Morton Avenue, Simpsonville, SC 29681",34.744151,-82.270283,both
+176,Point,176,Upstate,Greenville,Public,Lake Forest Elementary,Greenville,'K4-5th,754,0.952,greenville,lake forest elementary,"16 Berkshire Avenue, Greenville, SC 29615",34.881334,-82.342633,both
+177,Point,177,Upstate,Greenville,Public,Mountain View Elementary,Taylors,'3k-5th,768,0.861,greenville,mountain view elementary,"6350 Highway 253, Taylors, SC 29687",35.030733,-82.353957,both
+178,Point,178,Upstate,Greenville,Public,Lakeview Middle,Greenville,'6th-8th,771,0.974,greenville,lakeview middle,"3801 Old Buncombe Road, Greenville, SC 29617",34.887953,-82.4327,both
+179,Point,179,Upstate,Greenville,Public,Sara Collins Elementary,Greenville,'K5- 5th,790,0.959,greenville,sara collins elementary,"1200 Parkins Mill Road, Greenville, SC 29607",34.814204,-82.365512,both
+180,Point,180,Upstate,Greenville,Public,Brushy Creek Elementary,Taylors,'4K-5th,801,0.923,greenville,brushy creek elementary,"1344 Brushy Creek Road, Taylors, SC 29687",34.892862,-82.297101,both
+181,Point,181,Upstate,Greenville,Public,League Academy,Greenville,'6-8,801,0.923,greenville,league academy,"125 Twin Lake Drive, Greenville, SC 29609",34.880851,-82.372793,both
+182,Point,182,Upstate,Greenville,Public,Beck International Academy,Greenville,'6-8,806,0.908,greenville,beck international academy,"901 Woodruff Road, Greenville, SC 29607",34.837857,-82.322037,both
+183,Point,183,Upstate,Greenville,Public,Bryson Elementary,Simpsonville,'K5-5,808,0.927,greenville,bryson elementary,"703 Bryson Drive, Simpsonville, SC 29681",34.714012,-82.220048,both
+184,Point,184,Upstate,Greenville,Public,Northwood Middle,Taylors,'6-8,809,0.92,greenville,northwood middle,"710 Ike's Road, Taylors, SC 29687",34.892618,-82.314673,both
+185,Point,185,Upstate,Greenville,Public,Buena Vista Elementary,Greer,'K5-5th grade,813,0.935,greenville,buena vista elementary,"310 Batesville Road, Greer, SC 29650",34.885554,-82.267834,both
+186,Point,186,Upstate,Greenville,Public,Greenbrier Elementary,Greenville,'3K through 5th,828,0.934,greenville,greenbrier elementary,"853 Log Shoals Road, Greenville, SC 29607",34.759149,-82.300768,both
+187,Point,187,Upstate,Greenville,Public,Oakview Elementary,Simpsonville,'K3-5,830,0.935,greenville,oakview elementary,"515 Godfrey Road, Simpsonville, SC 29681",34.827004,-82.232925,both
+188,Point,188,Upstate,Greenville,Public,Chandler Creek Elementary,Greer,'K4-5th Grade,831,0.945,greenville,chandler creek elementary,"301 Chandler Road, Greer, SC 29651",34.955221,-82.236792,both
+189,Point,189,Upstate,Greenville,Public,Blythe Academy,Greenville,'PK-5,834,0.942,greenville,blythe academy,"100 Blythe Drive, Greenville, SC 29605",34.811459,-82.384279,both
+190,Point,190,Upstate,Greenville,Public,Monarch Elementary,Simpsonville,'K4-5,845,0.924,greenville,monarch elementary,"224 Five Forks Road, Simpsonville, SC 29681",34.800027,-82.241228,both
+191,Point,191,Upstate,Greenville,Public,Dr. Phinnize J. Fisher Middle,Greenville,'6-8,850,0.902,greenville,dr. phinnize j. fisher middle,"700 Millennium Boulevard, Greenville, SC 29607",34.816319,-82.317871,both
+192,Point,192,Upstate,Greenville,Public,Blue Ridge Middle,Greer,'6-8,860,0.859,greenville,blue ridge middle,"2423 East Tyger Bridge Road, Greer, SC 29651",35.039,-82.311859,both
+193,Point,193,Upstate,Greenville,Public,Bethel Elementary,Simpsonville,'K5-5,865,0.92,greenville,bethel elementary,"111 Bethel School Road, Simpsonville, SC 29681",34.7762,-82.277991,both
+194,Point,194,Upstate,Greenville,Public,Bell's Crossing Elementary,Simpsonville,'5K - 5th grade,872,0.92,greenville,bell's crossing elementary,"804 Scuffletown Road, Simpsonville, SC 29681",34.77857,-82.214349,both
+195,Point,195,Upstate,Greenville,Public,Mauldin Middle,Simpsonville,'6-8,884,0.931,greenville,mauldin middle,"1190 Holland Road, Simpsonville, SC 29681",34.804269,-82.27513,both
+196,Point,196,Upstate,Greenville,Public,Carolina High Academy,Greenville,'9-12,904,0.967,greenville,carolina high academy,"2725 Anderson Rd, Greenville, SC 29611",34.811802,-82.443325,left_only
+197,Point,197,Upstate,Greenville,Public,Ellen Woodside Elementary,Pelzer,'K4 - 5th grade,916,0.894,greenville,ellen woodside elementary,"9122 Augusta Road, Pelzer, SC 29669",34.648181,-82.390064,both
+198,Point,198,Upstate,Greenville,Public,Mauldin Elementary,Simpsonville,'K4-5th Grade,934,0.936,greenville,mauldin elementary,"1194 Holland Road, Simpsonville, SC 29681",34.807623,-82.273957,both
+199,Point,199,Upstate,Greenville,Public,Bryson Middle,Simpsonville,'6-8,947,0.936,greenville,bryson middle,"3657 South Industrial Drive, Simpsonville, SC 29681",34.716162,-82.249383,both
+200,Point,200,Upstate,Greenville,Public,Woodmont Middle,Piedmont,'6-8,948,0.938,greenville,woodmont middle,"325 North Flat Rock Road, Piedmont, SC 29673",34.692849,-82.40788,both
+201,Point,201,Upstate,Greenville,Public,Plain Elementary,simpsonville,'K-5,957,0.898,greenville,plain elementary,"506 Neely Ferry Road, Simpsonville, SC 29681",34.73219,-82.283086,both
+202,Point,202,Upstate,Greenville,Public,Hillcrest Middle,Simpsonville,"'6,7,8",971,0.931,greenville,hillcrest middle,"510 Garrison Road, Simpsonville, SC 29681",34.753807,-82.255722,both
+203,Point,203,Upstate,Greenville,Public,Hughes Academy of Science and Technology,Greenville,'6-8,972,0.947,greenville,hughes academy of science and technology,"122 DeOyley Avenue, Greenville, SC 29605",34.80762,-82.389558,both
+204,Point,204,Upstate,Greenville,Public,Robert E. Cashion Elementary,Greenville,'k4-5th,979,0.918,greenville,robert e. cashion elementary,"1500 Fork Shoals Road, Greenville, SC 29605",34.740389,-82.353245,both
+205,Point,205,Upstate,Greenville,Public,Greer Middle,Greer,'6th-8th grades,985,0.924,greenville,greer middle,"3032 East Gap Creek Road, Greer, SC 29651",34.983364,-82.234745,both
+206,Point,206,Upstate,Greenville,Public,GREEN Charter School Greenville,Greenville,"'5K,1, 2, 3, 4, 5, 6",994,0.923,greenville,green charter school greenville,"1440 Pelham Rd Suite D, Greenville, SC 29615",34.8554,-82.301207,left_only
+207,Point,207,Upstate,Greenville,Public,Blue Ridge High,Greer,'9th-12th,995,0.885,greenville,blue ridge high,"2151 Fews Chapel Road, Greer, SC 29651",35.039784,-82.286542,both
+208,Point,208,Upstate,Greenville,Public,Southside High,Greenville,'9-12,1004,0.944,greenville,southside high,"6630 Frontage at White Horse Road, Greenville, SC 29605",34.796802,-82.403769,both
+209,Point,209,Upstate,Greenville,Public,Riverside Middle,Greer,'6-8,1040,0.909,greenville,riverside middle,"615 Hammett Bridge Road, Greer, SC 29650",34.903618,-82.248311,both
+210,Point,210,Upstate,Greenville,Public,Fountain Inn Elementary,Fountain Inn,'K4-5,1095,0.918,greenville,fountain inn elementary,"608 Fairview Street, Fountain Inn, SC 29644",34.692503,-82.21106,both
+211,Point,211,Upstate,Greenville,Public,Berea High,Greenville,'9-12,1128,0.951,greenville,berea high,"201 Burdine Drive, Greenville, SC 29617",34.876374,-82.463838,both
+212,Point,212,Upstate,Greenville,Private,Bob Jones Academy,Greenville,'K5-12,1141,0.769,greenville,bob jones academy,"1700 WADE HAMPTON BLVD, GREENVILLE, SC 29614",34.87134,-82.364006,both
+213,Point,213,Upstate,Greenville,Private,Southside Christian School,Simpsonville,'Pre K2-12th grad,1171,0.885,greenville,southside christian school,"2211 WOODRUFF RD, SIMPSONVILLE, SC 29681",34.82127,-82.252561,both
+214,Point,214,Upstate,Greenville,Private,Christ Church Episcopal School,Greenville,'K-12,1233,0.942,greenville,christ church episcopal school,"245 CAVALIER DR, GREENVILLE, SC 29607",34.79612,-82.349561,both
+215,Point,215,Upstate,Greenville,Private,Christ Church Episcopal School,Greenville,'K-12,1233,0.942,greenville,christ church episcopal school,"245 CAVALIER DR, GREENVILLE, SC 29607",34.79612,-82.349561,both
+216,Point,216,Upstate,Greenville,Public,Travelers Rest High,Travelers Rest,'9-12,1243,0.936,greenville,travelers rest high,"301 North Main Street, Travelers Rest, SC 29690",34.97056,-82.449451,both
+217,Point,217,Upstate,Greenville,Public,Woodland Elementary,Greer,'4K-5,1245,0.953,greenville,woodland elementary,"1730 Gibb Shoals Road, Greer, SC 29650",34.897445,-82.246274,both
+218,Point,218,Upstate,Greenville,Public,Greer High,Greer,'9-12,1374,0.941,greenville,greer high,"3000 East Gap Creek Drive, Greer, SC 29651",34.982136,-82.231387,both
+219,Point,219,Upstate,Greenville,Public,Eastside High,Taylors,'9-12,1451,0.896,greenville,eastside high,"1300 Brushy Creek Road, Taylors, SC 29687",34.893639,-82.300793,both
+220,Point,220,Upstate,Greenville,Public,Legacy Early College,Greenville,'Kindergarten - 1,1533,0.962,greenville,legacy early college,"900 Woodside Avenue, Greenville, SC 29611",34.859118,-82.426385,both
+221,Point,221,Upstate,Greenville,Public,Rudolph G. Gordon School at Jones Mill,Simpsonville,'K5 - 8,1575,0.903,greenville,rudolph g. gordon school at jones mill,"1507 Scuffletown Rd, Simpsonville, SC 29681",34.746576,-82.192936,left_only
+222,Point,222,Upstate,Greenville,Public,Fountain Inn High School,Fountain Inn,'9th-12th,1649,0.936,greenville,fountain inn high school,"644 Quillen Ave, Fountain Inn, SC 29644",34.705098,-82.198392,left_only
+223,Point,223,Upstate,Greenville,Public,Greenville Senior High Academy,Greenville,'9-12,1680,0.972,greenville,greenville senior high academy,"1 Vardy Street, Greenville, SC 29601",34.839622,-82.407999,both
+224,Point,224,Upstate,Greenville,Public,Wade Hampton High,Greenville,'9-12,1793,0.98,greenville,wade hampton high,"100 Pine Knoll Drive, Greenville, SC 29609",34.88629,-82.355727,both
+225,Point,225,Upstate,Greenville,Public,Riverside High,GREER,'9-12,1821,0.928,greenville,riverside high,"794 Hammett Bridge Road, Greer, SC 29650",34.903108,-82.255801,both
+226,Point,226,Upstate,Greenville,Public,Heron Virtual Academy of South Carolina,Greenville,'8-12,1840,0.933,greenville,heron virtual academy of south carolina,"330 Pelham Road Suite101-A (Temporary), Greenville, SC 29615",34.862059,-82.341686,both
+227,Point,227,Upstate,Greenville,Public,Hillcrest High,Simpsonville,'9-12,1910,0.934,greenville,hillcrest high,"3665 South Industrial Drive, Simpsonville, SC 29681",34.713379,-82.247178,both
+228,Point,228,Upstate,Greenville,Public,J. L. Mann High Academy,Greenville,'9-12,1949,0.969,greenville,j. l. mann high academy,"160 Fairforest Way, Greenville, SC 29607",34.807137,-82.337023,both
+229,Point,229,Upstate,Greenville,Public,Woodmont High,Piedmont,'9-12,2114,0.95,greenville,woodmont high,"2831 West Georgia Road, Piedmont, SC 29673",34.688724,-82.359002,both
+230,Point,230,Upstate,Greenville,Public,Mauldin High,Mauldin,'9-12,2151,0.938,greenville,mauldin high,"701 East Butler Road, Mauldin, SC 29662",34.793815,-82.288527,both
+231,Point,231,Upstate,Greenville,Public,Cyber Academy of South Carolina,Greenville,'K-12,3698,0.867,greenville,cyber academy of south carolina,"330 Pelham Road Suite 101A, Greenville, SC 29615",34.862059,-82.341686,both
+232,Point,232,Upstate,Greenville,Private,Camperdown Academy,Greenville,'1-8,156,0.904,greenwood,camperdown academy,"65 Verdae Cmns Dr, Greenville, SC 29607",34.826944,-82.340874,left_only
+233,Point,233,Upstate,Greenwood,Private,Cambridge Academy,Greenwood,'K2-12,195,0.795,greenwood,cambridge academy,"103 EASTMAN ST, GREENWOOD, SC 29649",34.21237,-82.198451,both
+234,Point,234,Upstate,Greenwood,Public,Ware Shoals High,Ware Shoals,'9-12,219,0.95,greenwood,ware shoals high,"56 South Greenwood Avenue, Ware Shoals, SC 29692",34.393145,-82.238603,both
+235,Point,235,Upstate,Greenwood,Public,Ware Shoals Elementary Middle,Ware Shoals,'5-8,240,0.925,greenwood,ware shoals elementary middle,"45 West Main Street, Ware Shoals, SC 29692",34.394989,-82.25306,both
+236,Point,236,Upstate,Greenwood,Public,Ninety Six Primary School,Ninety Six,'K4-2nd,284,0.887,greenwood,ninety six primary school,"121 S Cambridge St, Ninety Six, SC 29666",34.172643,-82.023226,left_only
+237,Point,237,Upstate,Greenwood,Public,Ninety Six Elementary School,Ninety,'3-5,295,0.976,greenwood,ninety six elementary school,"810 Johnston Rd, Ninety Six, SC 29666",34.162661,-82.013383,left_only
+238,Point,238,Upstate,Greenwood,Public,Hodges Elementary,Hodges,'K4-5,314,0.978,greenwood,hodges elementary,"4717 Main Street, Hodges, SC 29653",34.287058,-82.253723,both
+239,Point,239,Upstate,Greenwood,Public,Edgewood Middle School,Ninety Six,'6-8,332,1,greenwood,edgewood middle school,"644 S Cambridge St, Ninety Six, SC 29666",34.156867,-82.025966,left_only
+240,Point,240,Upstate,Greenwood,Public,Pinecrest Elementary,Greenwood,'K4-5th grade,356,0.983,greenwood,pinecrest elementary,"220 East Northside Drive, Greenwood, SC 29649",34.230367,-82.171953,both
+241,Point,241,Upstate,Greenwood,Public,Lakeview Elementary,Greenwood,'PreK -5th grade,367,0.973,greenwood,lakeview elementary,"660 Center Street, Greenwood, SC 29649",34.209965,-82.193485,both
+242,Point,242,Upstate,Greenwood,Public,Ninety Six High School,ninety six,'9-12,422,1,greenwood,ninety six high school,"640 S Cambridge St, Ninety Six, SC 29666",34.156867,-82.025966,left_only
+243,Point,243,Upstate,Greenwood,Public,Woodfields Elementary,Greenwood,'K4-5,438,0.957,greenwood,woodfields elementary,"1032 Emerald Road, Greenwood, SC 29646",34.210482,-82.105692,both
+244,Point,244,Upstate,Greenwood,Public,Mathews Elementary,Greenwood,'K4-5th,466,0.966,greenwood,mathews elementary,"725 Marshall Road, Greenwood, SC 29646",34.182879,-82.138493,both
+245,Point,245,Upstate,Greenwood,Public,Eleanor S. Rice Elementary,Greenwood,'K4-5th,477,0.971,greenwood,eleanor s. rice elementary,"1802 East Durst Avenue, Greenwood, SC 29649",34.226964,-82.140853,both
+246,Point,246,Upstate,Greenwood,Public,Greenwood Charter Academy,Greenwood,'K4-8th,496,0.94,greenwood,greenwood charter academy,"412 Bypass 72 NW, Greenwood, SC 29649",34.212088,-82.182199,both
+247,Point,247,Upstate,Greenwood,Public,Brewer Middle,Greenwood,'6-8,577,0.976,greenwood,brewer middle,"1000 Emerald Road, Greenwood, SC 29646",34.213606,-82.110265,both
+248,Point,248,Upstate,Greenwood,Public,Dr. Benjamin E. Mays Elementary,Greenwood,'K4-5th Grade,609,0.949,greenwood,dr. benjamin e. mays elementary,"1608 Florida Avenue, Greenwood, SC 29646",34.152538,-82.174823,both
+249,Point,249,Upstate,Greenwood,Public,Northside Middle,Greenwood,'6-8,618,0.972,greenwood,northside middle,"431 Deadfall Road West, Greenwood, SC 29649",34.243075,-82.191272,both
+250,Point,250,Upstate,Greenwood,Public,Westview Middle,Greenwood,'6-8,694,0.857,greenwood,westview middle,"1410 West Alexander Road, Greenwood, SC 29646",34.15094,-82.183382,both
+251,Point,251,Upstate,Greenwood,Public,Emerald High,Greenwood,'9-12,839,0.989,greenwood,emerald high,"150 Bypass 225, Greenwood, SC 29646",34.191056,-82.187366,both
+252,Point,252,Upstate,Greenwood,Public,Greenwood High,Greenwood,'9-12 grades,1663,0.962,greenwood,greenwood high,"1816 Cokesbury Road, Greenwood, SC 29649",34.230782,-82.175173,both
+253,Point,253,Upstate,Laurens,Private,Fountain Inn Christian School,Fountain Inn,'K5 - 12,24,0.833,laurens,fountain inn christian school,"3597 Abercrombie Rd, Fountain Inn, SC 29644",34.662707,-82.179471,left_only
+254,Point,254,Upstate,Laurens,Private,Lighthouse Christian Academy,Enoree,'K5-12th,58,0.862,laurens,lighthouse christian academy,"23994 HWY 221 N, ENOREE, SC 29335",34.590502,-81.993945,both
+255,Point,255,Upstate,Laurens,Public,Sanders Middle,Laurens,'6-8,226,0.973,laurens,sanders middle,"609 Green Street, Laurens, SC 29360",34.489899,-82.007478,both
+256,Point,256,Upstate,Laurens,Public,Waterloo Elementary,Waterloo,'3K-5th,246,0.959,laurens,waterloo elementary,"10457 Highway 221 South, Waterloo, SC 29384",34.368452,-82.048749,both
+257,Point,257,Upstate,Laurens,Public,Joanna-Woodson Elementary,Joanna,'5K - 5,271,0.923,laurens,joanna-woodson elementary,"510 S Ellis St, Joanna, SC 29351",34.405565,-81.811432,left_only
+258,Point,258,Upstate,Laurens,Private,Laurens Academy,Laurens,'K-12th,304,0.783,laurens,laurens academy,"3515 SC-49, Laurens, SC 29360",34.549168,-81.948475,left_only
+259,Point,259,Upstate,Laurens,Public,Laurens Middle,Laurens,'6-8,334,0.973,laurens,laurens middle,"1035 West Main Street, Laurens, SC 29360",34.49419,-82.040131,both
+260,Point,260,Upstate,Laurens,Public,Ware Shoals Primary,Ware Shoals,'K3-4,363,0.887,laurens,ware shoals primary,"15269 Indian Mound Road, Ware Shoals, SC 29692",34.422156,-82.229651,both
+261,Point,261,Upstate,Laurens,Public,Ford Elementary,Laurens,'3k-5th,368,0.967,laurens,ford elementary,"601 Lucas Avenue, Laurens, SC 29360",34.522016,-81.996516,both
+262,Point,262,Upstate,Laurens,Public,Clinton Elementary,Clinton,'5K - 5th Grade,426,0.995,laurens,clinton elementary,"800 Chestnut Street, Clinton, SC 29325",34.453769,-81.883983,both
+263,Point,263,Upstate,Laurens,Public,Laurens Elementary,Laurens,'3K-5th,431,0.968,laurens,laurens elementary,"301 Henry Street, Laurens, SC 29360",34.515295,-82.039253,both
+264,Point,264,Upstate,Laurens,Public,E. B. Morse Elementary,Laurens,'3K-5th,448,0.971,laurens,e. b. morse elementary,"200 Parkview Drive, Laurens, SC 29360",34.491661,-82.038345,both
+265,Point,265,Upstate,Laurens,Public,Eastside Elementary,Clinton,'k5-5,459,0.9,laurens,eastside elementary,"103 Old Colony Road, Clinton, SC 29325",34.466763,-81.854598,both
+266,Point,266,Upstate,Laurens,Public,Clinton Middle,Clinton,'6-8,534,0.942,laurens,clinton middle,"800 North Adair Street, Clinton, SC 29325",34.481319,-81.863423,both
+267,Point,267,Upstate,Laurens,Public,Thornwell Charter School,Clinton,'5K-12,553,0.949,laurens,thornwell charter school,"203 West Calhoun Street, Clinton, SC 29325",34.46602,-81.881945,both
+268,Point,268,Upstate,Laurens,Public,Hickory Tavern Elementary/Middle,Gray Court,'k3-8th,557,0.941,laurens,hickory tavern elementary/middle,"163 Neely Ferry Road, Gray Court, SC 29645",34.5189,-82.1867,both
+269,Point,269,Upstate,Laurens,Public,Gray Court-Owings Elementary/Middle,Gray Court,'K3-8,629,0.979,laurens,gray court-owings elementary/middle,"9210 Highway 14, Gray Court, SC 29645",34.619693,-82.122789,both
+270,Point,270,Upstate,Laurens,Public,Clinton High,Clinton,'9-12,819,0.972,laurens,clinton high,"18132 Highway 72 East, Clinton, SC 29325",34.485231,-81.853902,both
+271,Point,271,Upstate,Laurens,Public,Laurens Dist 55 High,Laurens,'9-12,1292,0.986,laurens,laurens dist 55 high,"5058 US-76, Laurens, SC 29360",34.50122,-82.067187,left_only
+272,Point,272,Upstate,McCormick,Public,SC Governor's School for Agriculture at John de Ia Howe,McCormick,'10-12,91,0.857,mccormick,sc governor's school for agriculture at john de ia howe,"192 Gettys Rd, McCormick, SC 29835",33.956547,-82.413407,left_only
+273,Point,273,Upstate,McCormick,Public,McCormick Middle,McCormick,"'6th,7th,8th",104,0.952,mccormick,mccormick middle,"6979 Highway 28 South, McCormick, SC 29835",33.868731,-82.273467,both
+274,Point,274,Upstate,McCormick,Public,McCormick High,McCormick,'9th-12th,170,0.982,mccormick,mccormick high,"6981 SC Highway 28 South, McCormick, SC 29835",33.868731,-82.273467,both
+275,Point,275,Upstate,McCormick,Public,McCormick Elementary,McCormick,'5k-5th,192,0.974,mccormick,mccormick elementary,"6977 Highway 28 South, McCormick, SC 29835",33.868731,-82.273467,both
+276,Point,276,Upstate,Oconee,Private,Poplar Springs SDA School,Westminster,'1-8,<Null>,0.167,oconee,poplar springs sda school,"4279A S HWY 11, WESTMINSTER, SC 29693",34.696339,-83.048229,both
+277,Point,277,Upstate,Oconee,Private,Trinity Baptist Preschool,Seneca,'2K-5K,10,0.7,oconee,trinity baptist preschool,"504 S OAK ST, SENECA, SC 29678",34.67755,-82.955801,both
+278,Point,278,Upstate,Oconee,Private,Cherokee Creek Boys School,Westminster,'5-9,32,0.938,oconee,cherokee creek boys school,"198 COOPER RD, WESTMINSTER, SC 29693",34.666252,-83.295071,both
+279,Point,279,Upstate,Oconee,Private,Foothills Christian School,Westmnster,'1-12,94,0.521,oconee,foothills christian school,"126 ROBIN RD, WESTMINSTER, SC 29693",34.660697,-83.074567,both
+280,Point,280,Upstate,Oconee,Private,Foothills Christian School,Westmnster,'1-12,94,0.521,oconee,foothills christian school,"126 ROBIN RD, WESTMINSTER, SC 29693",34.660697,-83.074567,both
+281,Point,281,Upstate,Oconee,Private,Oconee Christian Academy,Seneca,'K5 - 12,125,0.8,oconee,oconee christian academy,"150 HIS WAY CIR, SENECA, SC 29672",34.722103,-82.995656,both
+282,Point,282,Upstate,Oconee,Public,Tamassee-Salem Elementary,Tamassee,'PreK - 5th,198,0.904,oconee,tamassee-salem elementary,"9950 North Highway 11, Tamassee, SC 29686",34.885966,-83.015695,both
+283,Point,283,Upstate,Oconee,Public,Keowee Elementary,Seneca,'K4-5th,291,0.945,oconee,keowee elementary,"7051 Keowee School Road, Seneca, SC 29672",34.787732,-82.960469,both
+284,Point,284,Upstate,Oconee,Public,Orchard Park Elementary,Westminster,'3k-5th,311,0.929,oconee,orchard park elementary,"600 Toccoa Highway, Westminster, SC 29693",34.670113,-83.113764,both
+285,Point,285,Upstate,Oconee,Public,Westminster Elementary,Westminster,'preK - 5th,369,0.973,oconee,westminster elementary,"206 Hamilton Street, Westminster, SC 29693",34.677036,-83.085202,both
+286,Point,286,Upstate,Oconee,Public,Blue Ridge Elementary,Seneca,'PIP - 5,462,0.972,oconee,blue ridge elementary,"995 South Oak Street, Seneca, SC 29678",34.669581,-82.955378,both
+287,Point,287,Upstate,Oconee,Public,James M. Brown Elementary,Walhalla,'PK-5,464,0.909,oconee,james m. brown elementary,"225 Coffee Road, Walhalla, SC 29691",34.762552,-83.082364,both
+288,Point,288,Upstate,Oconee,Public,Ravenel Elementary,Seneca,'PreK-5th grade,529,0.957,oconee,ravenel elementary,"150 Ravenel School Road, Seneca, SC 29678",34.685189,-82.895724,both
+289,Point,289,Upstate,Oconee,Public,Fair-Oak Elementary,Westminster,'PIP-5th grade,567,0.94,oconee,fair-oak elementary,"1964 Oakway Road, Westminster, SC 29693",34.579546,-83.021462,both
+290,Point,290,Upstate,Oconee,Public,Northside Elementary,Seneca,'PIP-5th,589,0.927,oconee,northside elementary,"710 North Townville Street, Seneca, SC 29678",34.694757,-82.956536,both
+291,Point,291,Upstate,Oconee,Public,Walhalla Elementary,West Union,'K3 - 5th,597,0.941,oconee,walhalla elementary,"508 Fowler Road, West Union, SC 29696",34.77812,-83.032176,both
+292,Point,292,Upstate,Oconee,Public,West Oak Middle,Westminster,"'6, 7, 8",676,0.954,oconee,west oak middle,"501 Westminster Highway, Westminster, SC 29693",34.677339,-83.091024,both
+293,Point,293,Upstate,Oconee,Public,West-Oak High,Westminster,'9-12,754,0.942,oconee,west-oak high,"130 Warrior Lane, Westminster, SC 29693",34.620998,-83.052625,both
+294,Point,294,Upstate,Oconee,Public,Walhalla Middle,Walhalla,'6-8,782,0.958,oconee,walhalla middle,"177 Razorback Lane, Walhalla, SC 29691",34.783541,-83.0564,both
+295,Point,295,Upstate,Oconee,Public,Seneca High,Seneca,'9-12,1022,0.967,oconee,seneca high,"100 Bobcat Ridge, Seneca, SC 29678",34.675244,-82.9884,both
+296,Point,296,Upstate,Oconee,Public,Walhalla High,Walhalla,'9-12,1100,0.961,oconee,walhalla high,"4701 North Highway 11, Walhalla, SC 29691",34.816726,-83.040434,both
+297,Point,297,Upstate,Pickens,Private,Clemson Montessori,Clemson,'5k-6,56,0.804,pickens,clemson montessori,"207 Pendleton Rd, Clemson, SC 29631",34.673357,-82.811938,left_only
+298,Point,298,Upstate,Pickens,Private,Missionary Christian School,Pickens,'K-12,59,0.949,pickens,missionary christian school,"979 JOHN ST, PICKENS, SC 29671",34.875513,-82.695461,both
+299,Point,299,Upstate,Pickens,Private,Lakeview Christian School,Pickens,'K5-8th,72,0.847,pickens,lakeview christian school,"107 MAULDIN LAKE RD, PICKENS, SC 29671",34.864644,-82.708867,both
+300,Point,300,Upstate,Pickens,Public,Summit Academy,Pickens,'6-8,122,0.795,pickens,summit academy,"698 Concord Church Rd, Pickens, SC 29671",34.882205,-82.761354,left_only
+301,Point,301,Upstate,Pickens,Private,Easley Christian School,Easley,'K3 - 12,163,0.675,pickens,easley christian school,"461 SACO LOWELL RD, EASLEY, SC 29640",34.83016,-82.566511,both
+302,Point,302,Upstate,Pickens,Public,Youth Leadership Academy,Pickens,'6-8,301,0.89,pickens,youth leadership academy,"698 Concord Church Road, Pickens, SC 29671",34.882218,-82.761319,both
+303,Point,303,Upstate,Pickens,Public,Ambler Elementary,Pickens,'K5-5th,307,0.902,pickens,ambler elementary,"838 Ambler School Road, Pickens, SC 29671",34.957231,-82.664866,both
+304,Point,304,Upstate,Greenville,Public,Slater Marietta Elementary,Marietta,'K4-5,340,0.924,pickens,slater marietta elementary,"100 Baker Cir, Marietta, SC 29661",35.022355,-82.496705,left_only
+305,Point,305,Upstate,Pickens,Public,Pickens Middle,Pickens,'6-8,385,0.966,pickens,pickens middle,"140 Torch Lane, Pickens, SC 29671",34.887326,-82.703564,both
+306,Point,306,Upstate,Pickens,Public,Dacusville Middle,Easley,'6-8,398,0.955,pickens,dacusville middle,"899 Thomas Mill Road, Easley, SC 29640",34.91508,-82.539396,both
+307,Point,307,Upstate,Pickens,Public,Pickens Elementary,Pickens,'K4-5,414,0.944,pickens,pickens elementary,"567 Hampton Avenue, Pickens, SC 29671",34.874683,-82.699757,both
+308,Point,308,Upstate,Pickens,Public,Liberty Middle,Liberty,'6-8,435,0.949,pickens,liberty middle,"125 Falcon Lane, Liberty, SC 29657",34.78794,-82.71026,both
+309,Point,309,Upstate,Pickens,Public,Liberty Elementary,Liberty,'3rd - 5th,454,0.947,pickens,liberty elementary,"251 North Hillcrest Street, Liberty, SC 29657",34.78942,-82.702685,both
+310,Point,310,Upstate,Pickens,Public,Liberty Primary School,Liberty,'K4-3rd,470,0.928,pickens,liberty primary school,"940 Chastain Rd, Liberty, SC 29657",34.745792,-82.719273,left_only
+311,Point,311,Upstate,Pickens,Public,Central Academy of the Arts,Central,'K-5,471,0.928,pickens,central academy of the arts,"608 Johnson Road, Central, SC 29630",34.736256,-82.775737,both
+312,Point,312,Upstate,Pickens,Public,McKissick Academy of Science & Technology,Easley,'K4-5,477,0.945,pickens,mckissick academy of science & technology,"156 McKissick Rd, Easley, SC 29640",34.849176,-82.610174,left_only
+313,Point,313,Upstate,Pickens,Public,Six Mile Elementary,Six Mile,'K4-5th grade,483,0.934,pickens,six mile elementary,"777 North Main Street, Six Mile, SC 29682",34.820608,-82.810805,both
+314,Point,314,Upstate,Pickens,Public,Hagood Elementary,Pickens,'K4-5th,516,0.95,pickens,hagood elementary,"435 Sparks Lane, Pickens, SC 29671",34.897623,-82.70486,both
+315,Point,315,Upstate,Pickens,Public,Crosswell Elementary,Easley,'K4-5th,523,0.92,pickens,crosswell elementary,"161 School Road, Easley, SC 29640",34.850052,-82.526394,both
+316,Point,316,Upstate,Pickens,Public,Dacusville Elementary,Easley,'4k-5th,530,0.932,pickens,dacusville elementary,"200 Cherokee Trail, Easley, SC 29640",34.912726,-82.543818,both
+317,Point,317,Upstate,Pickens,Public,R. C. Edwards Middle,Central,'6-8,539,0.95,pickens,r. c. edwards middle,"1157 Madden Bridge Road, Central, SC 29630",34.73069,-82.818228,both
+318,Point,318,Upstate,Pickens,Public,East End Elementary,Easley,'K4- 5th grade,559,0.93,pickens,east end elementary,"505 East Second Avenue, Easley, SC 29640",34.828276,-82.594843,both
+319,Point,319,Upstate,Pickens,Public,West End Elementary,Easley,'K4-5th,635,0.939,pickens,west end elementary,"314 Pelzer Highway, Easley, SC 29642",34.806458,-82.602914,both
+320,Point,320,Upstate,Pickens,Public,Liberty High,Liberty,'9-12,658,0.954,pickens,liberty high,"124 Red Devil Drive, Liberty, SC 29657",34.766005,-82.703473,both
+321,Point,321,Upstate,Pickens,Public,Forest Acres Elementary,Easley,'K-5,689,0.922,pickens,forest acres elementary,"401 McAlister Road, Easley, SC 29642",34.815461,-82.573537,both
+322,Point,322,Upstate,Pickens,Public,Clemson Elementary,Clemson,'5k-5th grade,765,0.953,pickens,clemson elementary,"581 Berkeley Drive, Clemson, SC 29631",34.688733,-82.797137,both
+323,Point,323,Upstate,Pickens,Public,Richard H. Gettys Middle,Easley,'6-8,1080,0.961,pickens,richard h. gettys middle,"510 South Pendleton Street, Easley, SC 29640",34.824781,-82.602454,both
+324,Point,324,Upstate,Pickens,Public,Pickens High,Pickens,'9-12,1194,0.957,pickens,pickens high,"150 Blue Flame Drive, Pickens, SC 29671",34.906272,-82.716288,both
+325,Point,325,Upstate,Pickens,Public,D. W. Daniel High,Central,'9th-12th,1219,0.949,pickens,d. w. daniel high,"140 Blue and Gold Boulevard, Central, SC 29630",34.738073,-82.833436,both
+326,Point,326,Upstate,Pickens,Public,Easley High,Easley,'9-12,1808,0.962,pickens,easley high,"154 Green Wave Boulevard, Easley, SC 29642",34.789607,-82.582452,both
+327,Point,327,Upstate,Spartanburg,Private,Legacy Christian School,Spartanburg,'K-1,11,0.909,spartanburg,legacy christian school,"150 KENSINGTON DR, SPARTANBURG, SC 29301",34.921812,-81.964229,both
+328,Point,328,Upstate,Spartanburg,Private,UMC of the Covenant Child Development Center,Boiling Springs,'1K - 5K,15,0.8,spartanburg,umc of the covenant child development center,"9020 ASHEVILLE HWY, SPARTANBURG, SC 29316",35.01424,-82.017421,both
+329,Point,329,Upstate,Spartanburg,Public,SC School for the Blind Elem/Middle,Spartanburg,'pre- k thru 8th,20,0.95,spartanburg,sc school for the blind elem/middle,"355 Cedar Springs Road, Spartanburg, SC 29302",34.911561,-81.882361,left_only
+330,Point,330,Upstate,Spartanburg,Private,Montessori Academy - Spartanburg,Spartanburg,'8 weeks to 6th g,24,0.917,spartanburg,montessori academy - spartanburg,"384 S SPRING ST, SPARTANBURG, SC 29306",34.94183,-81.930781,left_only
+331,Point,331,Upstate,Spartanburg,Public,SC School for the Blind High,Spartanburg,'PreK-8th,26,0.923,spartanburg,sc school for the blind high,"355 Cedar Springs Road, Spartanburg, SC 29302",34.911561,-81.882361,both
+332,Point,332,Upstate,Spartanburg,Private,St. Paul United Methodist Preschool,Sparanburg,'infant -5th grade,26,1,spartanburg,st. paul united methodist preschool,"1320 Fernwood Glendale Rd, Spartanburg, SC 29307",34.964388,-81.883816,left_only
+333,Point,333,Upstate,Spartanburg,Public,SC School for the Deaf High,Spartanburg,'9-12,33,0.758,spartanburg,sc school for the deaf high,"355 Cedar Spring Road, Spartanburg, SC 29302",34.911561,-81.882361,both
+334,Point,334,Upstate,Spartanburg,Private,St. Paul the Apostle Catholic School,Spartanburg,'K4 - 5th,36,1,spartanburg,st. paul the apostle catholic school,"152 Alabama St, Spartanburg, SC 29302",34.952633,-81.925715,left_only
+335,Point,335,Upstate,Spartanburg,Public,Cedar Springs Academy,Spartanburg,'pre-k -12th,38,0.921,spartanburg,cedar springs academy,"355 Cedar Springs Road, Spartanburg, SC 29302",34.911561,-81.882361,both
+336,Point,336,Upstate,Spartanburg,Public,SC School for the Deaf Elem/Middle,Spartanburg,'pre-k thru 8th,50,0.84,spartanburg,sc school for the deaf elem/middle,"355 Cedar Springs Road, Spartanburg, SC 29302",34.911561,-81.882361,left_only
+337,Point,337,Upstate,Spartanburg,Private,Eddlemon Adventist School,Spartanburg,'K-8,55,0.782,spartanburg,eddlemon adventist school,"1217 JOHN B. WHITE, SR. BLVD, SPARTANBURG, SC 29306",34.927542,-81.964544,left_only
+338,Point,338,Upstate,Spartanburg,Private,Mountain View Christian Academy,Cowpens,'K4-12th,153,0.817,spartanburg,mountain view christian academy,"650 BATTLEGROUND RD, COWPENS, SC 29330",35.046285,-81.815331,both
+339,Point,339,Upstate,Spartanburg,Public,Meeting Street Academy - Spartanburg,Spartanburg,'Pk-5th,216,0.995,spartanburg,meeting street academy - spartanburg,"201 East Broad Street Suite 110, Spartanburg, SC 29306",34.949001,-81.928191,left_only
+340,Point,340,Upstate,Spartanburg,Public,Landrum Middle,Landrum,'6-7,218,0.894,spartanburg,landrum middle,"104 Redland Road, Landrum, SC 29356",35.176308,-82.172466,both
+341,Point,341,Upstate,Spartanburg,Private,Westgate Christian School,Spartanburg,'K2-12th grade,310,0.468,spartanburg,westgate christian school,"1990 Old Reidville Rd, Spartanburg, SC 29301",34.925728,-81.995158,left_only
+342,Point,342,Upstate,Spartanburg,Public,Cooley Springs-Fingerville Elementary,Chesnee,'4K-5th,314,0.771,spartanburg,cooley springs-fingerville elementary,"140 Cooley Springs School Road, Chesnee, SC 29323",35.150424,-81.975829,both
+343,Point,343,Upstate,Spartanburg,Public,Mayo Elementary,Mayo,'4K-5th,314,0.895,spartanburg,mayo elementary,"1300 Springdale Road, Mayo, SC 29368",35.086495,-81.855244,both
+344,Point,344,Upstate,Spartanburg,Public,Cannons Elementary,Spartanburg,'4k-5th grade,339,0.947,spartanburg,cannons elementary,"1315 Old Converse Road, Spartanburg, SC 29307",35.011269,-81.863283,both
+345,Point,345,Upstate,Spartanburg,Public,Fairforest Middle,Spartanburg,'6-8,341,0.903,spartanburg,fairforest middle,"150 Lincoln School Road, Spartanburg, SC 29301",34.94998,-82.013161,both
+346,Point,346,Upstate,Spartanburg,Private,Oakbrook Preparatory Schools,Spartanburg,'K3-12,360,0.892,spartanburg,oakbrook preparatory schools,"190 LINCOLN SCHOOL RD, SPARTANBURG, SC 29301",34.945164,-82.015191,left_only
+347,Point,347,Upstate,Spartanburg,Public,Lone Oak Elementary,Spartanburg,'5K - 5,363,0.956,spartanburg,lone oak elementary,"7314 Lone Oak Road, Spartanburg, SC 29303",34.989009,-81.971855,both
+348,Point,348,Upstate,Spartanburg,Public,Inman Intermediate,Inman,"'4,5,6",365,0.827,spartanburg,inman intermediate,"10 West Miller Street, Inman, SC 29349",35.05183,-82.09822,both
+349,Point,349,Upstate,Spartanburg,Public,Jesse S. Bobo Elementary,Spartanburg,'K5-5th,367,0.937,spartanburg,jesse s. bobo elementary,"495 Powell Mill Road, Spartanburg, SC 29301",34.947711,-81.980941,both
+350,Point,350,Upstate,Spartanburg,Public,New Prospect Elementary,Inman,'K4-6,391,0.818,spartanburg,new prospect elementary,"9251 Highway 9, Inman, SC 29349",35.128084,-82.045766,both
+351,Point,351,Upstate,Spartanburg,Public,Mary H. Wright Elementary,Spartanburg,'3K-5th,392,0.969,spartanburg,mary h. wright elementary,"457 South Church Street, Spartanburg, SC 29306",34.938355,-81.926274,both
+352,Point,352,Upstate,Spartanburg,Public,Woodland Heights Elementary,Spartanburg,'K-5,393,0.939,spartanburg,woodland heights elementary,"1216 John B. White Sr. Boulevard, Spartanburg, SC 29306",34.930051,-81.964095,both
+353,Point,353,Upstate,Spartanburg,Public,Cowpens Elementary,Cowpens,'3k-5th grade,394,0.957,spartanburg,cowpens elementary,"341 Foster Street, Cowpens, SC 29330",35.026459,-81.818469,both
+354,Point,354,Upstate,Spartanburg,Public,Arcadia Elementary,Spartanburg,'5k-5th,395,0.957,spartanburg,arcadia elementary,"375 Spring Street, Spartanburg, SC 29301",34.964365,-81.991016,both
+355,Point,355,Upstate,Spartanburg,Public,Spartanburg Preparatory School,Spartanburg,'K4-8th,400,0.938,spartanburg,spartanburg preparatory school,"385 South Spring Street, Spartanburg, SC 29306",34.941903,-81.929526,both
+356,Point,356,Upstate,Spartanburg,Public,T. E. Mabry Middle,Inman,'7-8,415,0.81,spartanburg,t. e. mabry middle,"190 LINCOLN SCHOOL RD, SPARTANBURG, SC 29301",34.945164,-82.015191,left_only
+357,Point,357,Upstate,Spartanburg,Public,GREEN Charter School Spartanburg,Spartanburg,'K5-8th,415,0.865,spartanburg,green charter school spartanburg,"8150 Warren H. Abernathy Highway, Spartanburg, SC 29301",34.936279,-82.006018,both
+358,Point,358,Upstate,Spartanburg,Public,Pacolet Elementary,Pacolet,'3k-5th,429,0.951,spartanburg,pacolet elementary,"150 McDowell Street, Pacolet, SC 29372",34.903983,-81.767447,both
+359,Point,359,Upstate,Spartanburg,Public,O. P. Earle Elementary,Landrum,'5K-5,448,0.866,spartanburg,o. p. earle elementary,"100 Redland Road, Landrum, SC 29356",35.176817,-82.175469,both
+360,Point,360,Upstate,Spartanburg,Public,Inman Elementary,Inman,'4k - 3rd,456,0.789,spartanburg,inman elementary,"25 Oakland Avenue, Inman, SC 29349",35.047788,-82.096537,both
+361,Point,361,Upstate,Spartanburg,Public,E. P. Todd School,Spartanburg,'3K - 5th,462,0.877,spartanburg,e. p. todd school,"150 Old Canaan Road, Spartanburg, SC 29302",34.911463,-81.903038,both
+362,Point,362,Upstate,Spartanburg,Public,Holly Springs-Motlow Elementary,Campobello,'K4-6th grade,482,0.797,spartanburg,holly springs-motlow elementary,"325 Motlow School Road, Campobello, SC 29322",35.051296,-82.189227,both
+363,Point,363,Upstate,Spartanburg,Private,Spartanburg Day School,Spartanburg,'2k-12,484,0.948,spartanburg,spartanburg day school,"1701 SKYLYN DR, SPARTANBURG, SC 29307",34.97629,-81.892121,both
+364,Point,364,Upstate,Spartanburg,Public,Pauline-Glenn Springs Elementary,Pauline,'4k-5th,498,0.934,spartanburg,pauline-glenn springs elementary,"2957 Highway 56, Pauline, SC 29374",34.832061,-81.870119,both
+365,Point,365,Upstate,Spartanburg,Public,The Cleveland Academy of Leadership,Spartanburg,'3k-5th grade,498,0.916,spartanburg,the cleveland academy of leadership,"151 Franklin Street, Spartanburg, SC 29303",34.958494,-81.948963,both
+366,Point,366,Upstate,Spartanburg,Public,Florence Chapel Middle,Duncan,'6-8,502,0.904,spartanburg,florence chapel middle,"290 Shoals Road, Duncan, SC 29334",34.898384,-82.072494,both
+367,Point,367,Upstate,Spartanburg,Public,Jesse Boyd Elementary,Spartanburg,'k4-5,507,0.909,spartanburg,jesse boyd elementary,"1505 Fernwood Glendale Road, Spartanburg, SC 29307",34.957577,-81.877665,both
+368,Point,368,Upstate,Spartanburg,Public,Berry Shoals Elementary,Duncan,'-2 through 5th g,509,0.933,spartanburg,berry shoals elementary,"300 Shoals Rd, Duncan, SC 29334",34.899507,-82.073351,left_only
+369,Point,369,Upstate,Spartanburg,Public,Tyger River Elementary,Duncan,'K4-5th Grade,510,0.892,spartanburg,tyger river elementary,"12653 E Wade Hampton Blvd, Duncan, SC 29334",34.954044,-82.15072,left_only
+370,Point,370,Upstate,Spartanburg,Public,Carlisle-Foster's Grove Elementary,Chesnee,'3k-5th,513,0.75,spartanburg,carlisle-foster's grove elementary,"625 Foster's Grove Road, Chesnee, SC 29323",35.060573,-81.907801,both
+371,Point,371,Upstate,Spartanburg,Public,Landrum High,Campobello,'9-12,516,0.936,spartanburg,landrum high,"18818 Asheville Highway, Campobello, SC 29322",35.139683,-82.164593,both
+372,Point,372,Upstate,Spartanburg,Public,D. R. Hill Middle,Lyman,'6-8,533,0.88,spartanburg,d. r. hill middle,"1303 Holly Springs Road, Lyman, SC 29365",34.978168,-82.165207,both
+373,Point,373,Upstate,Spartanburg,Public,Mountain View Preparatory,Spartanburg,'7-12,554,0.854,spartanburg,mountain view preparatory,"895 Springfield Rd, Spartanburg, SC 29303",35.000583,-82.007749,left_only
+374,Point,374,Upstate,Spartanburg,Public,Clifdale Middle,Spartanburg,'6-8,561,0.973,spartanburg,clifdale middle,"451 Heritage Hill Road, Spartanburg, SC 29307",34.977843,-81.836591,both
+375,Point,375,Upstate,Spartanburg,Public,Chesnee Middle,Chesnee,'6-8,585,0.921,spartanburg,chesnee middle,"805 South Alabama Avenue, Chesnee, SC 29323",35.133335,-81.859205,both
+376,Point,376,Upstate,Spartanburg,Public,Duncan Elementary School of the Arts,Duncan,'3k-5th,587,0.913,spartanburg,duncan elementary school of the arts,"100 South Danzler Road, Duncan, SC 29334",34.930365,-82.128115,both
+377,Point,377,Upstate,Spartanburg,Public,Wellford Academy of Science and Technology,Wellford,'K4-5th,592,0.851,spartanburg,wellford academy of science and technology,"864 Syphrit Road, Wellford, SC 29385",34.95072,-82.093326,both
+378,Point,378,Upstate,Spartanburg,Private,Spartanburg Christian Academy,Spartanburg,'3k-12th,605,0.825,spartanburg,spartanburg christian academy,"8740 Asheville Hwy, Spartanburg, SC 29316",35.004178,-82.008042,left_only
+379,Point,379,Upstate,Spartanburg,Public,Global Academy of SC,Spartanburg,'5K-8,607,0.213,spartanburg,global academy of sc,"9768 Warren H. Abernathy Hwy, Spartanburg, SC 29301",34.940625,-82.062445,both
+380,Point,380,Upstate,Spartanburg,Public,Chesnee Elementary,Chesnee,'k3-5,607,0.929,spartanburg,chesnee elementary,"985 Fairfield Road, Chesnee, SC 29323",35.146024,-81.876304,both
+381,Point,381,Upstate,Spartanburg,Public,Pine St. Elementary,Spartanburg,'4K-5th Grade,620,0.948,spartanburg,pine st. elementary,"500 South Pine Street, Spartanburg, SC 29302",34.944126,-81.910715,both
+382,Point,382,Upstate,Spartanburg,Public,Woodruff Primary,Woodruff,'3k-2nd,627,0.906,spartanburg,woodruff primary,"200 Lucy P. Edwards Road, Woodruff, SC 29388",34.730735,-82.01197,both
+383,Point,383,Upstate,Spartanburg,Public,Anderson Mill Elementary,Moore,'4K-5th,633,0.929,spartanburg,anderson mill elementary,"1845 Old Anderson Mill Road, Moore, SC 29369",34.883493,-82.003639,both
+384,Point,384,Upstate,Spartanburg,Public,Carver Middle,Spartanburg,'6-8,640,0.95,spartanburg,carver middle,"467 South Church Street, Spartanburg, SC 29306",34.93726,-81.927208,both
+385,Point,385,Upstate,Spartanburg,Public,Reidville Elementary,Reidville,'4K-5,645,0.878,spartanburg,reidville elementary,"520 Main Street, Reidville, SC 29375",34.860402,-82.107268,both
+386,Point,386,Upstate,Spartanburg,Public,Beech Springs Middle,Duncan,'6-8,645,0.909,spartanburg,beech springs middle,"200 S Danzler Rd, Duncan, SC 29334",34.925581,-82.129779,left_only
+387,Point,387,Upstate,Spartanburg,Public,West View Elementary,Spartanburg,'5k - 5th grade,649,0.932,spartanburg,west view elementary,"400 Oak Grove Road, Spartanburg, SC 29301",34.925846,-82.002909,both
+388,Point,388,Upstate,Spartanburg,Public,Woodruff Elementary,Woodruff,'3-5,651,0.975,spartanburg,woodruff elementary,"915 Cross Anchor Road, Woodruff, SC 29388",34.730956,-82.014675,both
+389,Point,389,Upstate,Spartanburg,Public,Oakland Elementary,Inman,'K4-5th,653,0.83,spartanburg,oakland elementary,"151 Mud Creek Road, Inman, SC 29349",35.068359,-82.006427,both
+390,Point,390,Upstate,Spartanburg,Public,James H. Hendrix Elementary,Boiling Springs,'K4-5,661,0.868,spartanburg,james h. hendrix elementary,"1084 Springfield Road, Boiling Springs, SC 29316",35.00415,-82.005135,both
+391,Point,391,Upstate,Spartanburg,Public,Lyman Elementary,Lyman,'3K-5th,693,0.886,spartanburg,lyman elementary,"1221 Holly Springs Road, Lyman, SC 29365",34.97633,-82.163171,both
+392,Point,392,Upstate,Spartanburg,Public,Woodruff Middle,Woodruff,'6-8,699,0.95,spartanburg,woodruff middle,"205 S. J. Workman Highway, Woodruff, SC 29388",34.73593,-82.016742,both
+393,Point,393,Upstate,Spartanburg,Public,Abner Creek Middle,Greer,'6-8,713,0.892,spartanburg,abner creek middle,"221 State Rd S-42-618, Greer, SC 29651",34.867661,-82.16625,left_only
+394,Point,394,Upstate,Spartanburg,Public,Chesnee High,Chesnee,'9-12,715,0.951,spartanburg,chesnee high,"795 South Alabama Avenue, Chesnee, SC 29323",35.132902,-81.861634,both
+395,Point,395,Upstate,Spartanburg,Public,River Ridge Elementary,Moore,'-2 through 5th G,764,0.894,spartanburg,river ridge elementary,"5960 Reidville Road, Moore, SC 29369",34.88462,-82.070932,both
+396,Point,396,Upstate,Spartanburg,Public,R. P. Dawkins Middle,Moore,'6-8,764,0.931,spartanburg,r. p. dawkins middle,"1300 East Blackstock Road, Moore, SC 29369",34.901902,-81.975998,both
+397,Point,397,Upstate,Spartanburg,Public,L. E. Gable Middle,Roebuck,'6-8,779,0.942,spartanburg,l. e. gable middle,"198 Ott Shoals Road, Roebuck, SC 29376",34.855912,-81.946007,both
+398,Point,398,Upstate,Spartanburg,Public,Abner Creek Academy,Duncan,'K5-5th,784,0.879,spartanburg,abner creek academy,"2050 Abner Creek Road, Duncan, SC 29334",34.869583,-82.163731,both
+399,Point,399,Upstate,Spartanburg,Public,Drayton Mills Elementary,Spartanburg,'4k-5th grade,787,0.939,spartanburg,drayton mills elementary,"1500 Skylyn Drive, Spartanburg, SC 29307",34.972378,-81.900147,both
+400,Point,400,Upstate,Spartanburg,Public,Campobello-Gramling School,Campobello,'K5-8,797,0.802,spartanburg,campobello-gramling school,"250 Fagan Avenue, Campobello, SC 29322",35.101735,-82.145663,both
+401,Point,401,Upstate,Spartanburg,Public,Shoally Creek Elementary,Boiling Springs,'4K-5th Grade,807,0.86,spartanburg,shoally creek elementary,"3777 Paris Bridge Road, Boiling Springs, SC 29316",35.028486,-81.953397,both
+402,Point,402,Upstate,Spartanburg,Public,Libertas Academy - Boiling Springs,Boiling Springs,'4k-8th,822,0.743,spartanburg,libertas academy - boiling springs,"300 Rainbow Lake Rd, Boiling Springs, SC 29316",35.056858,-81.982747,left_only
+403,Point,403,Upstate,Spartanburg,Public,Fairforest Elementary,Spartanburg,'4K-5,839,0.825,spartanburg,fairforest elementary,"1005 Mount Zion Road, Spartanburg, SC 29303",34.981769,-82.061449,both
+404,Point,404,Upstate,Spartanburg,Public,Boiling Springs Elementary,Boiling Springs,'K4-5th,852,0.804,spartanburg,boiling springs elementary,"700 Double Bridge Road, Boiling Springs, SC 29316",35.038351,-81.984329,both
+405,Point,405,Upstate,Spartanburg,Public,Woodruff High,Woodruff,'9-12,852,0.973,spartanburg,woodruff high,"710 Cross Anchor Highway, Woodruff, SC 29388",34.73214,-82.022624,both
+406,Point,406,Upstate,Spartanburg,Public,Roebuck Elementary,Roebuck,'4K-5th Grade,873,0.837,spartanburg,roebuck elementary,"2401 East Blackstock Road, Roebuck, SC 29376",34.875432,-81.959891,both
+407,Point,407,Upstate,Spartanburg,Public,Broome High,Spartanburg,'9-12,875,0.967,spartanburg,broome high,"381 Cherry Hill Road, Spartanburg, SC 29307",34.986479,-81.844197,both
+408,Point,408,Upstate,Spartanburg,Public,James Byrnes Freshman Academy,Duncan,'1-9,880,0.901,spartanburg,james byrnes freshman academy,"100 Rowe Street, Duncan, SC 29334",34.928479,-82.129654,both
+409,Point,409,Upstate,Spartanburg,Public,Sugar Ridge Elementary,Boiling Springs,'4K-5th,890,0.775,spartanburg,sugar ridge elementary,"2055 Hanging Rock Road, Boiling Springs, SC 29316",35.050274,-82.016375,both
+410,Point,410,Upstate,Spartanburg,Public,Dorman Freshman Campus,Roebuck,'1-9,906,0.935,spartanburg,dorman freshman campus,"Freshman Campus, 1225 Cavalier Way, Roebuck, SC 29376",34.857042,-81.974787,left_only
+411,Point,411,Upstate,Spartanburg,Public,McCracken Middle,Spartanburg,'6-8,957,0.962,spartanburg,mccracken middle,"300 Webber Road, Spartanburg, SC 29307",34.976774,-81.870289,both
+412,Point,412,Upstate,Spartanburg,Public,Rainbow Lake Middle,Chesnee,'6-8,998,0.822,spartanburg,rainbow lake middle,"1951 Riveroak Road, Chesnee, SC 29323",35.102077,-81.98061,both
+413,Point,413,Upstate,Spartanburg,Public,Chapman High,Inman,'7-12,1012,0.873,spartanburg,chapman high,"1420 Compton Bridge Road, Inman, SC 29349",35.062634,-82.100305,both
+414,Point,414,Upstate,Spartanburg,Public,Boiling Springs Middle,Inman,'6-8,1114,0.75,spartanburg,boiling springs middle,"4801 Highway 9, Inman, SC 29349",35.065104,-82.007035,both
+415,Point,415,Upstate,Spartanburg,Public,High Point Academy,Spartanburg,'K-12,1297,0.87,spartanburg,high point academy,"6655 Pottery Road, Spartanburg, SC 29303",34.98507,-82.022591,both
+416,Point,416,Upstate,Spartanburg,Public,Spartanburg High,Spartanburg,'9th-12th,2152,0.963,spartanburg,spartanburg high,"2250 E. Main Street, Spartanburg, SC 29307",34.97958,-81.879378,both
+417,Point,417,Upstate,Spartanburg,Public,James F. Byrnes High,Duncan,'10-12,2350,0.936,spartanburg,james f. byrnes high,"150 East Main Street, Duncan, SC 29334",34.933095,-82.12786,both
+418,Point,418,Upstate,Spartanburg,Public,Boiling Springs High,Boiling Springs,'9-12,2781,0.915,spartanburg,boiling springs high,"2251 Old Furnace Road, Boiling Springs, SC 29316",35.04769,-81.973348,both
+419,Point,419,Upstate,Spartanburg,Public,Dorman High,Roebuck,'10 thru 12,2870,0.959,spartanburg,dorman high,"1050 Cavalier Way, Roebuck, SC 29376",34.849447,-81.971507,both
+420,Point,420,Upstate,Union,Private,Union Christian Day School,Union,'3K-12,80,0.4,union,union christian day school,"331 Meansville Rd, Union, SC 29379",34.732945,-81.649504,left_only
+421,Point,421,Upstate,Union,Public,Foster Park Elementary,Union,'5K-5,372,0.992,union,foster park elementary,"901 Arthur Boulevard, Union, SC 29379",34.722248,-81.611413,both
+422,Point,422,Upstate,Union,Public,Monarch Elementary,Union,'4k-5th,409,0.976,union,monarch elementary,"218 Monarch School Drive, Union, SC 29379",34.719622,-81.597757,both
+423,Point,423,Upstate,Union,Public,Buffalo Elementary,Buffalo,'4k-5th,481,0.963,union,buffalo elementary,"733 Main Street, Buffalo, SC 29321",34.724484,-81.65593,both
+424,Point,424,Upstate,Union,Public,Jonesville Elementary/Middle,Jonesville,'4K-8th,514,0.981,union,jonesville elementary/middle,"316-320 State Rd S-44-407, Jonesville, SC 29353",34.800209,-81.675419,left_only
+425,Point,425,Upstate,Union,Public,Sims Middle,Union,'6-8,621,0.976,union,sims middle,"2200 Whitmire Highway, Union, SC 29379",34.681654,-81.602787,both
+426,Point,426,Upstate,Union,Public,Union County High,Union,'9-12,993,0.978,union,union county high,"1163 Lakeside Drive, Union, SC 29379",34.750298,-81.605074,both
