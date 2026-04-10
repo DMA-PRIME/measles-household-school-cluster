@@ -291,7 +291,7 @@ theme_map <- function() {
   theme_void(base_size = 14) +
     theme(
       plot.title = element_text(size = 16, face = "bold", hjust = 0.5, margin = margin(b = 5)),
-      plot.subtitle = element_text(size = 11, hjust = 0.5, color = "#666666", margin = margin(b = 10)),
+      plot.subtitle = element_text(size = 11, hjust = 0.5, color = "black", margin = margin(b = 10)),
       legend.position = "bottom",
       legend.title = element_text(size = 11, face = "bold"),
       legend.text = element_text(size = 10),
