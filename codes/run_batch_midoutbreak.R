@@ -7,11 +7,12 @@
 #   - Contacts currently in quarantine
 # Then simulates forward to forecast remaining outbreak trajectory.
 #
-# Output files (same structure as run_batch_clean.R):
+# Output files:
 #   task_XX_summary.rds   - Per-simulation summary
 #   task_XX_curves.rds    - Network-level epidemic curves
 #   task_XX_hh_curves.rds - Household epidemic curves
 #   task_XX_schools.rds   - Per-school summaries
+#   task_XX_county.rds    - County-level infection totals (students + HH members)
 #
 # Usage:
 #   Rscript run_batch_midoutbreak.R --task_id=1 --n_sims=100 --n_cores=12 \
@@ -62,9 +63,6 @@ cat(sprintf("Task %d: Running %d mid-outbreak simulations on %d cores\n",
 # LOAD MODULES
 # ==============================================================================
 cat("Loading simulation modules...\n")
-# Determine the directory containing this script so that load_all.R and
-# midoutbreak_utils.R are found whether the script is invoked from the project
-# root (`Rscript codes/run_batch_midoutbreak.R`) or from within codes/.
 .batch_args <- commandArgs(trailingOnly = FALSE)
 .batch_file  <- sub("^--file=", "", grep("^--file=", .batch_args, value = TRUE))
 codes_dir    <- if (length(.batch_file) > 0) dirname(normalizePath(.batch_file)) else "."
@@ -90,8 +88,9 @@ schools <- data.frame(
 schools <- schools[!is.na(schools$school_size) & schools$school_size > 0, , drop = FALSE]
 schools$school_id <- seq_len(nrow(schools))
 
-# Filter to region matching household cache
-region_counties <- c("Spartanburg","Greenville")
+# Filter to region
+region_counties <- c("Spartanburg","Greenville","Anderson","Pickens","Union","Oconee","Greenwood",
+"Laurens","McCormick","Cherokee","Abbeville")
 county_col <- schools_raw$County
 valid_rows <- !is.na(as.integer(schools_raw$Total.Students)) &
               as.integer(schools_raw$Total.Students) > 0
@@ -106,20 +105,20 @@ cat(sprintf("Loaded %d schools in %s\n", nrow(schools),
 # DISEASE PARAMETERS
 # ==============================================================================
 params <- list(
- # Disease progression (Erlang-distributed durations)
+  # Disease progression (Erlang-distributed durations)
   latent_mean = 10, latent_shape = 8,
-  infectious_mean = 8,infectious_shape = 8,
+  infectious_mean = 8, infectious_shape = 8,
   prodromal_period = 4,
-# Within-school transmission
-  c_within = 5,           # Mean contacts per day within class
-  c_between = 2,          # Mean contacts per day between classes
-  p_within = 0.10,       # Per-contact transmission probability (within class)
+  # Within-school transmission
+  c_within = 6,           # Mean contacts per day within class
+  c_between = 3,          # Mean contacts per day between classes
+  p_within = 0.10,        # Per-contact transmission probability (within class)
   p_between = 0.10,       # Per-contact transmission probability (between class)
-# Between-school transmission
+  # Between-school transmission
   c_between_school = 0.15,  # Base contact rate between schools (scaled by network)
- # Household transmission
+  # Household transmission
   hh_transmission_prob = 0.15,  # Daily per-contact probability within household
- # Infectiousness modifiers
+  # Infectiousness modifiers
   prodromal_infectiousness_multiplier = 1.0,
   rash_infectiousness_multiplier = 1.0,
   # Vaccine parameters
@@ -137,82 +136,66 @@ params <- list(
   avg_class_size = 25,
   age_range = c(5, 18)
 )
+
 # ==============================================================================
 # OBSERVED OUTBREAK STATE
 # ==============================================================================
-# *** EDIT THIS SECTION TO MATCH YOUR CURRENT SITUATION ***
-#
-# exposed_schools:     Names of schools that have reported measles exposure.
-#                      Must match school names in the CSV (partial match OK).
-#
-# total_cases:         Total confirmed measles cases across ALL exposed schools
-#                      so far (cumulative). These will be placed among
-#                      unvaccinated students in the listed schools.
-#
-# quarantine_contacts: Number of contacts currently in quarantine as of today.
-#                      Set to 0 if quarantine is not being used.
-#
-# fraction_active:     Estimated fraction of total_cases that are still
-#                      infectious right now (E + P + Ra), not yet recovered.
-#                      Default 0.15 = 15% still active, 85% recovered.
-#                      Increase if outbreak is early/accelerating;
-#                      decrease if outbreak is waning.
-#
-# hh_attack_rate:      Probability that a susceptible household member of an
-#                      infected student has been infected. Default 0.30.
-# ==============================================================================
+observed_state <- list(exposed_schools=c("Fairforest Elementary","Global Academy of SC"),
+total_cases=11,
+quarantine_contacts=50,
+fraction_active=0.8,
+hh_attack_rate=0.90)
+  
+ # list(
+ # exposed_schools = c("Fairforest Elementary","Boiling Springs Elementary",
+ #                     "Holly Springs-Motlow Elementary","Raibbow Lake Middle",
+ #                      "Campobello-Gramling School", "Crestview Elementary",
+ #                      "Libertas Academy - Boiling Springs", "Berry Shoals Elementary",
+ #                      "Oakland Elementary", "T. E. Mabry Middle", "Landrum High",
+ #                      "Starr Elementary","Global Academy of SC",
+ #                      "Chapman High", "Boiling Springs High","Boiling Springs Middle",
+ #                      "Abner Creek Middle", "Tyger River Elementary",
+ #                      "Sugar Ridge Elementary","Cannons Elementary",
+ #                      "Cannons Elementary","Cooley Springs-Fingerville Elementary",
+ #                      "Inman Intermediate","James H. Hendrix Elementary",
+ #                      "Jesse S. Bobo Elementary","Mayo Elementary",
+ #                      "Sugar Ridge Elementary"),
 
-observed_state <- list(
-  exposed_schools = c("Fairforest Elementary","Boiling Springs Elementary", "Holly Springs-Motlow Elementary","Raibbow Lake Middle",
-                       "Campobello-Gramling School", "Crestview Elementary",
-                       "Libertas Academy - Boiling Springs", "Berry Shoals Elementary", "Oakland Elementary",
-                       "T. E. Mabry Middle", "Landrum High","Starr Elementary","Global Academy of SC",
-                       "Chapman High", "Boiling Springs High","Boiling Springs Middle","Abner Creek Middle",
-			"Tyger River Elementary","Sugar Ridge Elementary","Cannons Elementary","Cannons Elementary","Cooley Springs-Fingerville Elementary",
-			"Inman Intermediate","James H. Hendrix Elementary", "Jesse S. Bobo Elementary","Mayo Elementary",
-			"Sugar Ridge Elementary") ,
-
-  total_cases         = 993,    # Total confirmed cases to date
-  quarantine_contacts = 52,    # Contacts in quarantine this week
-  fraction_active     = 0.007,  # 15% of cases still infectious
-  hh_attack_rate      = 0.90   # 30% household secondary attack rate
-)
+ #  total_cases         = 993,
+ # quarantine_contacts = 52,
+ # fraction_active     = 0.007,
+ # hh_attack_rate      = 0.90
+#)
 
 cat("\n--- OBSERVED STATE ---\n")
 cat(sprintf("Exposed schools: %s\n", paste(observed_state$exposed_schools, collapse = ", ")))
 cat(sprintf("Total cases: %d\n", observed_state$total_cases))
 cat(sprintf("Quarantine contacts: %d\n", observed_state$quarantine_contacts))
-cat(sprintf("Fraction active: %.0f%%\n", observed_state$fraction_active * 100))
+cat(sprintf("Fraction active: %.1f%%\n", observed_state$fraction_active * 100))
 cat(sprintf("HH attack rate: %.0f%%\n", observed_state$hh_attack_rate * 100))
 cat("----------------------\n")
 
 # ==============================================================================
 # SETUP NETWORK (Travel Time-Based)
 # ==============================================================================
-# Uses precomputed driving time matrix for between-school connectivity.
-# Falls back to Haversine distance if travel time data is unavailable.
-# ==============================================================================
 cat("Generating network...\n")
 
 travel_time_file     <- "data/Travel_time_matrix_Upstate.csv"
 school_ref_file      <- "data/School_reference_Upstate.csv"
-max_travel_time      <- 16     # minutes
+max_travel_time      <- 16
 network_weight_method <- "exponential"
 
 if (file.exists(travel_time_file) && file.exists(school_ref_file)) {
 
   cat("Using precomputed travel time matrix for network...\n")
 
-  # Load school reference to get OBJECTID -> School.Name mapping
   school_ref <- read.csv(school_ref_file, stringsAsFactors = FALSE)
   school_ref <- school_ref[!is.na(school_ref$School.Name) & school_ref$School.Name != "", ]
 
-  # Handle OBJECTID vs ID column name
   if ("OBJECTID" %in% names(school_ref) && !"ID" %in% names(school_ref)) {
     school_ref$ID <- school_ref$OBJECTID
   }
 
-  # Match schools to reference IDs by County + School.Name
   schools$match_key <- paste(schools$county, schools$school_name, sep = "_")
   school_ref$match_key <- paste(school_ref$County, school_ref$School.Name, sep = "_")
 
@@ -234,7 +217,6 @@ if (file.exists(travel_time_file) && file.exists(school_ref_file)) {
       weight_method = network_weight_method
     )
 
-    # Remap adjacency matrix to sequential school_id order
     n_schools <- nrow(schools)
     adj_full <- matrix(0, nrow = n_schools, ncol = n_schools)
 
@@ -275,15 +257,14 @@ if (file.exists(travel_time_file) && file.exists(school_ref_file)) {
 
     unmatched <- which(is.na(schools$ref_id))
     if (length(unmatched) > 0) {
-      cat(sprintf("  WARNING: %d schools not in travel time matrix (no between-school edges):\n",
-                  length(unmatched)))
+      cat(sprintf("  WARNING: %d schools not in travel time matrix:\n", length(unmatched)))
       for (idx in unmatched[1:min(5, length(unmatched))]) {
         cat(sprintf("    - %s\n", schools$school_name[idx]))
       }
       if (length(unmatched) > 5) cat(sprintf("    ... and %d more\n", length(unmatched) - 5))
     }
   } else {
-    cat("  WARNING: Too few matches — falling back to Haversine distance network\n")
+    cat("  WARNING: Too few matches - falling back to Haversine distance\n")
     network <- generate_distance_network(schools, max_distance_km = round(max_travel_time * 0.87))
   }
 
@@ -291,186 +272,109 @@ if (file.exists(travel_time_file) && file.exists(school_ref_file)) {
   schools$ref_id <- NULL
 
 } else {
-  cat("Travel time files not found — using Haversine distance network\n")
-  if (!file.exists(travel_time_file)) cat(sprintf("  Missing: %s\n", travel_time_file))
-  if (!file.exists(school_ref_file))  cat(sprintf("  Missing: %s\n", school_ref_file))
+  cat("Travel time files not found - using Haversine distance network\n")
   network <- generate_distance_network(schools, max_distance_km = round(max_travel_time * 0.87))
 }
 
 # ==============================================================================
 # HOUSEHOLD SETUP
 # ==============================================================================
-# ==============================================================================
-# No longer depends on a pre-built cache. Loads the RTI synthetic population
-
-# CSV and assigns households to students directly, so any region works.
-
-#
-
-# Required: data/synthetic_population_sc.csv (or whatever your synpop file is)
-
-# Expected columns: hh_id, agep, person_id, hh_size, lon_4326, lat_4326
-
-# ==============================================================================
-
-
-
 synpop_file <- "data/synthetic_population_sc.csv"
-
 hh_cache_file <- "data/household_assignment_cache.rds"
-
 hh_pop <- NULL
-
 household_assignment <- NULL
 
-
-
 populations_template <- lapply(seq_len(nrow(schools)), function(i) {
-
   create_school_population(i, schools$school_size[i], params$avg_class_size, params$age_range)
-
 })
-
-
 
 if (file.exists(synpop_file)) {
 
   cat("Loading synthetic population...\n")
-
   synpop <- load_synthetic_population(synpop_file)
 
-
-
-  # Check if a valid cache exists for this exact school set
-
   cache_valid <- FALSE
-
   if (file.exists(hh_cache_file)) {
-
     saved <- readRDS(hh_cache_file)
-
     if (!is.null(saved$n_schools) && saved$n_schools == nrow(schools)) {
-
-      # Quick check: same number of schools suggests same region
-
       cache_valid <- TRUE
-
-      cat("Found valid household cache matching current school count — using cache\n")
-
+      cat("Found valid household cache matching current school count - using cache\n")
     } else {
-
-      cat(sprintf("Cache mismatch (cache has %d schools, current has %d) — regenerating\n",
-
+      cat(sprintf("Cache mismatch (cache has %d schools, current has %d) - regenerating\n",
                   saved$n_schools, nrow(schools)))
-
     }
-
   }
-
-
 
   if (cache_valid) {
-
     hh_result <- load_household_assignment(hh_cache_file, populations_template, schools, verbose = FALSE)
-
   } else {
-
     cat("Assigning households to students (this may take a few minutes)...\n")
-
     hh_result <- assign_households_to_students(
-
       populations = populations_template,
-
       schools = schools,
-
       synpop = synpop,
-
       max_distance_km = 25,
-
       grade_tolerance = 2,
-
       verbose = TRUE
-
     )
-
-
-
-    # Save cache for other SLURM tasks or future runs with same region
-
     save_household_assignment(hh_result, hh_cache_file, schools)
-
     cat(sprintf("Saved new household cache: %s\n", hh_cache_file))
-
   }
 
-
-
   populations_template <- hh_result$populations
-
   household_assignment <- hh_result$assignment_df
 
-
-
   populations_template <- assign_household_level_vaccination(
-
     populations_template, schools, household_assignment, verbose = FALSE
-
   )
 
-
-
   hh_pop <- create_household_population(hh_result$household_members, populations_template, params)
-
   hh_pop <- initialize_household_vaccination(populations_template, hh_pop, 0.8, 0.5, 0.95)
 
-
-
   cat(sprintf("Household transmission enabled: %d members in %d households\n",
-
               nrow(hh_pop), length(unique(household_assignment$hh_id))))
 
-
-
-  # Clean up large synpop object
-
   rm(synpop); gc(verbose = FALSE)
-
-
 
 } else if (file.exists(hh_cache_file)) {
 
   cat("Synpop file not found, falling back to household cache...\n")
-
   hh_result <- load_household_assignment(hh_cache_file, populations_template, schools, verbose = FALSE)
-
   populations_template <- hh_result$populations
-
   household_assignment <- hh_result$assignment_df
-
   populations_template <- assign_household_level_vaccination(
-
     populations_template, schools, household_assignment, verbose = FALSE
-
   )
-
   hh_pop <- create_household_population(hh_result$household_members, populations_template, params)
-
   hh_pop <- initialize_household_vaccination(populations_template, hh_pop, 0.8, 0.5, 0.95)
-
   cat(sprintf("Household transmission enabled: %d members\n", nrow(hh_pop)))
 
 } else {
-
   cat("WARNING: Neither synpop file nor household cache found\n")
-
   cat("  Running WITHOUT household transmission\n")
-
 }
-
-
 
 use_households <- !is.null(hh_pop)
 
+# ==============================================================================
+# BUILD COUNTY LOOKUP FOR HOUSEHOLDS
+# ==============================================================================
+# Map each household to a county via the school its children attend.
+# This avoids needing sf/shapefiles on the cluster.
+# ==============================================================================
+school_county <- setNames(schools$county, seq_len(nrow(schools)))
+
+hh_county_lookup <- NULL
+if (!is.null(household_assignment)) {
+  hh_school <- aggregate(school_id ~ hh_id, data = household_assignment,
+                          FUN = function(x) x[1])
+  hh_county_lookup <- setNames(
+    schools$county[hh_school$school_id],
+    as.character(hh_school$hh_id)
+  )
+  cat(sprintf("County lookup built: %d households mapped to %d counties\n",
+              length(hh_county_lookup), length(unique(hh_county_lookup))))
+}
 
 # ==============================================================================
 # RUN SIMULATIONS IN PARALLEL
@@ -507,14 +411,13 @@ results_list <- mclapply(seq_len(opt$n_sims), function(i) {
       household_assignment = household_assignment
     )
 
-    # Extract results (same field names as run_network_simulation)
+    # Extract results
     total_inf <- result$total_infected
     schools_aff <- sum(result$school_summary$total_infected > 0)
     total_breakthrough <- result$total_breakthrough
     hh_inf <- result$total_hh_members_infected
     actual_days <- result$actual_days
 
-    # New cases = total at end minus what we started with
     new_student_cases <- total_inf - observed_state$total_cases
     new_hh_cases <- hh_inf - round(
       length(which(!hh_pop$is_student & hh_pop$hh_id %in%
@@ -551,6 +454,56 @@ results_list <- mclapply(seq_len(opt$n_sims), function(i) {
     school_summary$task_id <- opt$task_id
     school_summary$sim_id <- i
 
+    # ------------------------------------------------------------------
+    # COUNTY-LEVEL AGGREGATION (students + household members)
+    # ------------------------------------------------------------------
+
+    # Students by county
+    student_county <- data.frame(
+      county = school_county[as.character(result$school_summary$school_id)],
+      student_infected = result$school_summary$total_infected,
+      stringsAsFactors = FALSE
+    )
+    student_by_county <- aggregate(student_infected ~ county,
+                                    data = student_county, FUN = sum)
+
+    # Household members by county
+    hh_by_county <- data.frame(county = character(0),
+                                hh_infected = integer(0),
+                                stringsAsFactors = FALSE)
+
+    if (!is.null(result$hh_pop) && !is.null(hh_county_lookup)) {
+      infected_hh <- result$hh_pop[
+        !result$hh_pop$is_student &
+        result$hh_pop$state %in% c("E", "P", "Ra", "Iso", "R", "QE", "QP"), ]
+
+      if (nrow(infected_hh) > 0) {
+        infected_hh$county <- hh_county_lookup[as.character(infected_hh$hh_id)]
+        infected_hh <- infected_hh[!is.na(infected_hh$county), ]
+
+        if (nrow(infected_hh) > 0) {
+          hh_by_county <- aggregate(
+            hh_infected ~ county,
+            data = data.frame(county = infected_hh$county,
+                              hh_infected = 1L,
+                              stringsAsFactors = FALSE),
+            FUN = sum
+          )
+        }
+      }
+    }
+
+    # Combine student + household by county
+    county_summary <- merge(student_by_county, hh_by_county,
+                             by = "county", all = TRUE)
+    county_summary[is.na(county_summary)] <- 0L
+    county_summary$total_infected <- county_summary$student_infected +
+                                      county_summary$hh_infected
+    county_summary$task_id <- opt$task_id
+    county_summary$sim_id <- i
+
+    # ------------------------------------------------------------------
+
     list(
       summary = data.frame(
         task_id = opt$task_id,
@@ -569,7 +522,8 @@ results_list <- mclapply(seq_len(opt$n_sims), function(i) {
       ),
       epidemic_curve = epidemic_curve,
       hh_curve = hh_curve,
-      school_summary = school_summary
+      school_summary = school_summary,
+      county_summary = county_summary
     )
 
   }, error = function(e) {
@@ -586,7 +540,8 @@ results_list <- mclapply(seq_len(opt$n_sims), function(i) {
       ),
       epidemic_curve = NULL,
       hh_curve = NULL,
-      school_summary = NULL
+      school_summary = NULL,
+      county_summary = NULL
     )
   })
 }, mc.cores = opt$n_cores)
@@ -598,11 +553,13 @@ elapsed <- as.numeric(difftime(Sys.time(), start_time, units = "secs"))
 # ==============================================================================
 dir.create(opt$output_dir, recursive = TRUE, showWarnings = FALSE)
 
+# 1. Summary
 summary_df <- do.call(rbind, lapply(results_list, function(x) x$summary))
 summary_file <- file.path(opt$output_dir, sprintf("task_%02d_summary.rds", opt$task_id))
 saveRDS(summary_df, summary_file)
 cat(sprintf("Summary saved: %s\n", summary_file))
 
+# 2. Epidemic curves
 curves <- Filter(Negate(is.null), lapply(results_list, function(x) x$epidemic_curve))
 if (length(curves) > 0) {
   curves_df <- do.call(rbind, curves)
@@ -611,6 +568,7 @@ if (length(curves) > 0) {
   cat(sprintf("Epidemic curves saved: %s\n", curves_file))
 }
 
+# 3. Household curves
 hh_curves <- Filter(Negate(is.null), lapply(results_list, function(x) x$hh_curve))
 if (length(hh_curves) > 0) {
   hh_curves_df <- do.call(rbind, hh_curves)
@@ -619,6 +577,7 @@ if (length(hh_curves) > 0) {
   cat(sprintf("Household curves saved: %s\n", hh_file))
 }
 
+# 4. School summaries
 school_sums <- Filter(Negate(is.null), lapply(results_list, function(x) x$school_summary))
 if (length(school_sums) > 0) {
   school_sums_df <- do.call(rbind, school_sums)
@@ -627,7 +586,16 @@ if (length(school_sums) > 0) {
   cat(sprintf("School summaries saved: %s\n", school_file_out))
 }
 
-# Also save the observed_state for reference
+# 5. County summaries (students + household members)
+county_sums <- Filter(Negate(is.null), lapply(results_list, function(x) x$county_summary))
+if (length(county_sums) > 0) {
+  county_sums_df <- do.call(rbind, county_sums)
+  county_file <- file.path(opt$output_dir, sprintf("task_%02d_county.rds", opt$task_id))
+  saveRDS(county_sums_df, county_file)
+  cat(sprintf("County summaries saved: %s\n", county_file))
+}
+
+# Save observed_state for reference
 saveRDS(observed_state,
         file.path(opt$output_dir, "observed_state.rds"))
 
@@ -651,12 +619,41 @@ print_forecast <- function(label, x) {
               quantile(x, 0.975, na.rm = TRUE)))
 }
 
-print_forecast("Final total student infections",   summary_df$total_infected)
-print_forecast("NEW student cases (from today)",    summary_df$new_student_cases)
-print_forecast("Schools affected",                  summary_df$schools_affected)
-print_forecast("Household members infected",        summary_df$hh_members_infected)
+print_forecast("Final total student infections",    summary_df$total_infected)
+print_forecast("NEW student cases (from today)",     summary_df$new_student_cases)
+print_forecast("Schools affected",                   summary_df$schools_affected)
+print_forecast("Household members infected",         summary_df$hh_members_infected)
 print_forecast("Remaining outbreak duration (days)", summary_df$actual_days)
-print_forecast("Peak day (from today)",             summary_df$peak_day)
+print_forecast("Peak day (from today)",              summary_df$peak_day)
+
+# County-level breakdown
+if (length(county_sums) > 0) {
+  cat("\n--- PREDICTED INFECTIONS BY COUNTY ---\n")
+  county_print <- county_sums_df %>%
+    dplyr::group_by(county) %>%
+    dplyr::summarise(
+      median_student = median(student_infected),
+      median_hh      = median(hh_infected),
+      median_total   = median(total_infected),
+      lo             = quantile(total_infected, 0.025),
+      hi             = quantile(total_infected, 0.975),
+      .groups = "drop"
+    ) %>%
+    dplyr::arrange(dplyr::desc(median_total))
+
+  cat(sprintf("  %-20s %8s %8s %8s   [%5s - %5s]\n",
+              "County", "Students", "HH", "Total", "2.5%", "97.5%"))
+  cat("  ", strrep("-", 65), "\n")
+  for (r in seq_len(nrow(county_print))) {
+    cat(sprintf("  %-20s %8.0f %8.0f %8.0f   [%5.0f - %5.0f]\n",
+                county_print$county[r],
+                county_print$median_student[r],
+                county_print$median_hh[r],
+                county_print$median_total[r],
+                county_print$lo[r],
+                county_print$hi[r]))
+  }
+}
 
 n_failed <- sum(is.na(summary_df$total_infected))
 if (n_failed > 0) {
