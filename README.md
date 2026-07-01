@@ -1,4 +1,4 @@
-# measles-household-school-cluster
+# Measles Model for School and Household Transmission
 
 An agent-based model (ABM) for simulating measles transmission across interconnected schools and households. The model captures within-school spread, between-school spread via a geographic network, and secondary household transmission — supporting both prospective outbreak projection and real-time mid-outbreak forecasting.
 
