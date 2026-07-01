@@ -2,7 +2,6 @@
 # SCHOOL NETWORK MEASLES SIMULATION WITH HOUSEHOLD TRANSMISSION
 # ==============================================================================
 # Example script showing how to run simulations with household structure
-# Updated: Added parallel processing and household assignment caching
 # ==============================================================================
 
 rm(list = ls())

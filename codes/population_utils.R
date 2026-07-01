@@ -3,7 +3,6 @@
 # ==============================================================================
 # File: population_utils.R
 # Contains: Population creation, vaccination, infection seeding, disease states
-# Updated: Added household fields for household transmission model
 # Dependencies: R6 (for ContactHistory class)
 # ==============================================================================
 

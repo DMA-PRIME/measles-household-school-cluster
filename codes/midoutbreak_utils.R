@@ -244,7 +244,7 @@ seed_from_observed_state <- function(populations, schools, params,
       pop$rash_duration[r_idx] <- pmax(1, inf_dur - params$prodromal_period)
       pop$time_since_prodromal[r_idx] <- inf_dur + 1  # past infectious period
 
-      # FIXED: Mark a recovered individual as the school index case.
+      # Mark a recovered individual as the school index case.
       # In a mid-outbreak, the original index case has already been detected
       # and recovered. Setting is_school_index on a recovered individual
       # signals that this school has heightened surveillance, so ALL currently

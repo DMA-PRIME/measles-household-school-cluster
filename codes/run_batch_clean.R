@@ -423,13 +423,6 @@ results_list <- mclapply(seq_len(opt$n_sims), function(i) {
       household_assignment = household_assignment
     )
 
-    # ------------------------------------------------------------------
-    # FIXED: Use correct field names from run_network_simulation return.
-    # The function returns result$school_summary (NOT outbreak_summary).
-    # Using the wrong name silently returns NULL, and sum(NULL) = 0,
-    # which is why all results previously showed zero infections.
-    # ------------------------------------------------------------------
-
     total_inf <- result$total_infected
     schools_aff <- sum(result$school_summary$total_infected > 0)
     total_breakthrough <- result$total_breakthrough
