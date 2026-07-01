@@ -29,7 +29,6 @@ An agent-based model (ABM) for simulating measles transmission across interconne
   - [Mid-Outbreak Forecasting](#mid-outbreak-forecasting)
 - [Outputs](#outputs)
 - [Running Tests](#running-tests)
-- [Citation](#citation)
 
 ---
 
@@ -504,15 +503,3 @@ library(testthat)
 test_dir("tests/testthat/")
 ```
 
----
-
-## Citation
-
-If you use this model in published research, please cite:
-
-> Pandey A, *et al*. Agent-based simulation of measles transmission in school-household networks. *[Journal]*, *[Year]*. (in preparation)
-
-Please also cite the R packages used for computation:
-
-- Eddelbuettel D, François R (2011). Rcpp: Seamless R and C++ Integration. *Journal of Statistical Software*, 40(8), 1–18.
-- Csárdi G, Nepusz T (2006). The igraph software package for complex network research. *InterJournal, Complex Systems*, 1695.
