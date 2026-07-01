@@ -1,20 +1,5 @@
 # ==============================================================================
-# CORRECTED: Between-School Transmission (density-dependent contact sampling)
-# ==============================================================================
-#
-# FIX: Contacts are now sampled from the FULL school population (all states),
-# not just S/V. This correctly models survey-derived contact rates which
-# represent all inter-school encounters, not just encounters with susceptible
-# individuals. Contacts that land on non-susceptible individuals (E, P, Ra, R)
-# are "wasted" — they consume a contact event but produce no transmission.
-#
-# This matters significantly in mid-outbreak scenarios where a substantial
-# fraction of a school may already be infected/recovered. With the old code,
-# the effective between-school force of infection was artificially constant
-# regardless of how depleted the susceptible pool was.
-#
-# Replace the between_school_transmission function in simulation_utils.R
-# with this corrected version.
+# Between-School Transmission (density-dependent contact sampling)
 # ==============================================================================
 
 between_school_transmission <- function(populations, network, params) {
@@ -40,12 +25,6 @@ between_school_transmission <- function(populations, network, params) {
     return(populations)
   }
 
-  # -----------------------------------------------------------------------
-  # FIX: Build contact pools from ALL non-isolated/non-quarantined students,
-  # regardless of disease state. Survey-derived contact rates (Poisson mean)
-  # represent total inter-school encounters with any individual, not just
-  # encounters with susceptible people.
-  # -----------------------------------------------------------------------
   all_members_by_school <- list()
   for (school_idx in 1:n_schools) {
     pop <- populations[[school_idx]]

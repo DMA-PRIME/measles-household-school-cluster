@@ -15,41 +15,6 @@ RCPP_REBUILD <- TRUE
 # ==============================================================================
 # Within-school transmission (contact-based with tracking)
 # ==============================================================================
-# ==============================================================================
-
-# CORRECTED: Within-School Transmission (density-dependent contact sampling)
-
-# ==============================================================================
-
-#
-
-# FIX: Contacts are now sampled from ALL present students (any disease state),
-
-# not just S/V. This correctly models survey-derived contact rates which
-
-# represent total classroom encounters. Contacts that land on non-susceptible
-
-# individuals (E, P, Ra, R) are "wasted" — no transmission occurs.
-
-#
-
-# CHANGE SUMMARY:
-
-#   - Added class_members / all_members pools (full present population)
-
-#   - Contact sampling draws from class_members / all_members
-
-#   - Transmission only occurs if sampled target is S or V
-
-#   - Contact tracing records ALL contacts (regardless of target state)
-
-#
-
-# Replace the cpp_school_transmission_contacts cppFunction block in
-
-# rcpp_transmission.R with this corrected version.
-
-# ==============================================================================
 
 
 
@@ -144,20 +109,6 @@ List cpp_school_transmission_contacts(
     );
 
   }
-
-
-
-  // -----------------------------------------------------------------------
-
-  // FIX: Build TWO sets of pools:
-
-  //   1. class_members / all_members: ALL present students (for sampling who
-
-  //      the infector contacts — represents survey-derived contact rates)
-
-  //   2. State checking at transmission time: only S/V can become infected
-
-  // -----------------------------------------------------------------------
 
 
 
